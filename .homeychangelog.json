@@ -41,5 +41,14 @@
   },
   "5.0.9": {
     "en": "Bug fixes; related to trigger flowcards (fan direction, fan rate)."
+  },
+  "5.0.10": {
+    "en": "1/ Bug fixes: action flowcard related (fan rate and fan Swing). 2/ Store desicription update."
+  },
+  "5.0.11": {
+    "en": "1/ Bug fixes: action flowcard related (fan rate and fan Swing). 2/ Store desicription update."
+  },
+  "5.0.12": {
+    "en": "Either the target temperature or the inside temperature can now be shown on the tile."
   }
 }

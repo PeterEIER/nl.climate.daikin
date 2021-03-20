@@ -6,13 +6,13 @@
     "nl": "Daikin AI"
   },
   "description": {
-    "en": "Adds support for Daikin Air-to-air heat pumps",
-    "nl": "Maakt de bediening van Daikin Lucht/lucht warmtepompen mogelijk"
+    "en": "Experience your perfect climate",
+    "nl": "Ervaar jouw perfecte klimaat"
   },
   "category": [
     "climate"
   ],
-  "version": "5.0.9",
+  "version": "5.0.12",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "athomForumDiscussionId": 2082,
@@ -1599,6 +1599,35 @@
                 "nl": "Wanneer aangezet zal de airco niet aanschakelen ongeacht de gekozen modus. Dit maakt het mogelijk om vrijuit te experimenteren met flows zonder bang hoeven te zijn dat de airconditoner beschadigd raakt."
               },
               "value": false
+            },
+            {
+              "id": "tiletemp",
+              "type": "radio",
+              "label": {
+                "en": "Tile temperature",
+                "nl": "Tegel temperatuur"
+              },
+              "hint": {
+                "en": "Fuction of the tile its temperature indicator when the airco is turned off. Note: whenever inside temperature is selected the target temperature might change when Homey is rebooted, the app is updated etc.",
+                "nl": "Functie van de tegel haar temperatuur indicator wanneer de airco is uitgeschakeld. Noot: wanneer binnentemperatuur is geselecteerd bestaat de kans dat ingestelde temperatuur wijzigd bij een reboot van Homey, een applicatie update etc."
+              },
+              "value": "target",
+              "values": [
+                {
+                  "id": "target",
+                  "label": {
+                    "en": "Target temperature",
+                    "nl": "Ingestelde temperatuur"
+                  }
+                },
+                {
+                  "id": "inside",
+                  "label": {
+                    "en": "Inside temperature",
+                    "nl": "Binnentemperatuur"
+                  }
+                }
+              ]
             }
           ]
         }

@@ -9,11 +9,11 @@ class AirAirHPDevice extends Device {
 	onInit() {
 		this.log('>>>onInit device airairhp');
 		super.onInit();
-		
+
 		let device = this; // We're in a Device instance
 		let tokens = {};
 		let state = {};
-		
+
 		// -------- Initializing Flows - Triggers --------------
 		this.driver.ready().then(() => {
 			this.log('Initializing Flow Triggers...')
@@ -33,14 +33,14 @@ class AirAirHPDevice extends Device {
 		});
 
 
-        const deviceCapabilities = this.getCapabilities();
-		this.log('Device Capabilities:', deviceCapabilities);	
-		
+		const deviceCapabilities = this.getCapabilities();
+		this.log('Device Capabilities:', deviceCapabilities);
+
 		const settings = this.getSettings();
 		const spmode_config = settings.spmode;
 		this.log('Special Mode:', spmode_config);
-		
-		this.log('AirAirHP capability registration started...');		
+
+		this.log('AirAirHP capability registration started...');
 		switch (spmode_config) {
 			case 0:
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
@@ -48,7 +48,7 @@ class AirAirHPDevice extends Device {
 					.catch(this.error); // ensure a valid mode is shown at start up...
 				break;
 			case 1:
-				if(this.hasCapability('thermostat_mode_ext1')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext1')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -58,7 +58,7 @@ class AirAirHPDevice extends Device {
 					.catch(this.error); // ensure a valid mode is shown at start up...
 				break;
 			case 2:
-				if(this.hasCapability('thermostat_mode_ext2')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext2')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -68,7 +68,7 @@ class AirAirHPDevice extends Device {
 					.catch(this.error); // ensure a valid mode is shown at start up...
 				break;
 			case 3:
-				if(this.hasCapability('thermostat_mode_ext3')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext3')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -81,7 +81,7 @@ class AirAirHPDevice extends Device {
 					.catch(this.error); // ensure a valid mode is shown at start up...
 				break;
 			case 4:
-				if(this.hasCapability('thermostat_mode_ext4')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext4')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -92,7 +92,7 @@ class AirAirHPDevice extends Device {
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 5:
-				if(this.hasCapability('thermostat_mode_ext5')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext5')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -106,7 +106,7 @@ class AirAirHPDevice extends Device {
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 6:
-				if(this.hasCapability('thermostat_mode_ext6')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext6')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -120,7 +120,7 @@ class AirAirHPDevice extends Device {
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 7:
-				if(this.hasCapability('thermostat_mode_ext7')) this.setWarning('Complete the driver upgrade.');
+				if (this.hasCapability('thermostat_mode_ext7')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
 				this.setCapabilityValue('thermostat_mode_std', 'off')
@@ -140,9 +140,9 @@ class AirAirHPDevice extends Device {
 				break;
 		}
 		this.setSettings({
-			capability_mode: 'off',
-		})
-		  .catch(this.error);
+				capability_mode: 'off',
+			})
+			.catch(this.error);
 
 		this.registerCapabilityListener('fan_rate', this.onCapabilityFanRate.bind(this));
 		this.registerCapabilityListener('fan_direction', this.onCapabilityFanDir.bind(this));
@@ -192,7 +192,7 @@ class AirAirHPDevice extends Device {
 		return Promise.resolve();
 	}
 
-    // Special mode Econo
+	// Special mode Econo
 	onCapabilitySpecialModeEco(special_mode_eco) {
 		this.log('>>>onCapabilitySpecialModeEco');
 		this.log('Economy:', special_mode_eco);
@@ -228,7 +228,7 @@ class AirAirHPDevice extends Device {
 		return Promise.resolve();
 	}
 
-    // Special mode Powerful
+	// Special mode Powerful
 	onCapabilitySpecialModePwr(special_mode_pwr) {
 		this.log('>>>onCapabilitySpecialModePwr');
 		this.log('Powerful:', special_mode_pwr);
@@ -264,7 +264,7 @@ class AirAirHPDevice extends Device {
 		return Promise.resolve();
 	}
 
-    // Special mode Streamer
+	// Special mode Streamer
 	onCapabilitySpecialModeStr(special_mode_str) {
 		this.log('>>>onCapabilitySpecialModeStr');
 		this.log('Streamer:', special_mode_str);
@@ -330,8 +330,8 @@ class AirAirHPDevice extends Device {
 	onCapabilityAircoHum(ahum) {
 		this.log('>>>onCapabilityAircoHum');
 
-	    const oldahum = this.getState()['target_humidity'];
-	    this.log('old target humidity: ', oldahum);
+		const oldahum = this.getState()['target_humidity'];
+		this.log('old target humidity: ', oldahum);
 
 		// --- Flowcards logic for humidity triggering
 		if (oldahum !== ahum) {
@@ -382,7 +382,7 @@ class AirAirHPDevice extends Device {
 			this._triggerTargetTemperatureMoreThan.trigger(device, tokens, state);
 			this._triggerTargetTemperatureLessThan.trigger(device, tokens, state);
 			this._triggerTargetTemperatureBetween.trigger(device, tokens, state);
-		
+
 			// update the airco its settings
 			this.daikinTempControl(atemp);
 		}
@@ -447,11 +447,11 @@ class AirAirHPDevice extends Device {
 
 		// ---- error handling
 		if (!(control_info === 'ctrlerr_404' && control_info === 'ctrlerr_parse')) this.setWarning(null);
-		if(control_info === 'ctrlerr_404') { 
+		if (control_info === 'ctrlerr_404') {
 			this.setWarning('HTTP 404 error (control)');
 			return Promise.resolve();
 		}
-		if(control_info === 'ctrlerr_parse') {
+		if (control_info === 'ctrlerr_parse') {
 			this.setWarning('Control update failed (parse err)');
 			return Promise.resolve();
 		}
@@ -486,16 +486,16 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		this.setSettings({
-			capability_mode
-		})
-		  .catch(this.error);
+				capability_mode
+			})
+			.catch(this.error);
 		this.log('mode:', thermostat_mode);
 		this.log('capability_mode_std:', capability_mode);
 
 		// --- Flowcards logic for mode triggering
 		// check if this is the initial run (after paring).
 		if (oldcapability_mode === 'undefined') {
-		    this.log('On first run... initialize the oldcapability_mode')	
+			this.log('On first run... initialize the oldcapability_mode')
 			oldcapability_mode = capability_mode;
 			this.log('oldcapability_mode =', oldcapability_mode);
 		}
@@ -520,19 +520,30 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		// turn thermostat ui component black when AC is turned off (note: a custom airco_mode capability and the thermostat ui component do not work properly together...)
-		if ((capability_mode === 'off')) {
+		const tiletemp = settings.tiletemp;
+		if ((capability_mode === 'off') && (tiletemp === 'target')) {
 			const target_temp = this.getCapabilityValue('target_temperature');
-    		this.setCapabilityValue('measure_temperature', target_temp)
-			.catch(this.error); // used by the Homey thermostat
+			this.setCapabilityValue('measure_temperature', target_temp)
+				.catch(this.error); // used by the Homey thermostat
+		}
+		if ((capability_mode === 'off') && (tiletemp === 'inside')) {
+			const inside_temp = this.getCapabilityValue('measure_temperature.inside');
+			this.setCapabilityValue('target_temperature', inside_temp)
+				.catch(this.error); // used by the Homey thermostat
+			// update the airco its settings as necessary
+			const target_temp = this.getCapabilityValue('target_temperature');
+			if (target_temp !== inside_temp) {
+				this.daikinTempControl(inside_temp);
+			}
 		}
 
 		// ---- humidity
 		if ((spmode === 4) || (spmode === 5) || (spmode === 6) || (spmode === 7)) {
 			const ahum = Number(control_info[5]);
-		    this.log('Target humidity: ', ahum);
+			this.log('Target humidity: ', ahum);
 			this.setCapabilityValue('target_humidity', ahum)
 				.catch(this.error);
-		}		
+		}
 
 		// ---- fan rate
 		const fan_rates = ['auto', 'quiet', 'level1', 'level2', 'level3', 'level4', 'level5'];
@@ -570,11 +581,11 @@ class AirAirHPDevice extends Device {
 
 		// ---- error handling
 		if (!(sensor_info === 'sensorerr_404' && sensor_info === 'sensorerr_parse')) this.setWarning(null);
-		if(sensor_info === 'sensorerr_404') { 
+		if (sensor_info === 'sensorerr_404') {
 			this.setWarning('HTTP 404 error (sensors)');
 			return Promise.resolve();
 		}
-		if(sensor_info === 'sensorerr_parse') {
+		if (sensor_info === 'sensorerr_parse') {
 			this.setWarning('Sensor update failed (parse err)');
 			return Promise.resolve();
 		}
@@ -585,11 +596,13 @@ class AirAirHPDevice extends Device {
 		var oldOutsideTemperature = this.getState()['measure_temperature.outside'];
 		this.log('oldOutsideTemperature: ', oldOutsideTemperature);
 
-		const inside = parseFloat(sensor_info[1]);  //was >> Number(sensor_info[1]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
+		const settings = this.getSettings();
+		const tiletemp = settings.tiletemp;
+		const inside = parseFloat(sensor_info[1]); //was >> Number(sensor_info[1]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
 		const outside = parseFloat(sensor_info[3]); //was >> Number(sensor_info[3]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
 		var capability_mode = this.getCapabilityValue('thermostat_mode_std');
-		if(capability_mode !== 'off') {
-    		this.setCapabilityValue('measure_temperature', inside)
+		if ( (capability_mode !== 'off') || ((capability_mode === 'off') && (tiletemp === 'inside')) ) {
+			this.setCapabilityValue('measure_temperature', inside)
 				.catch(this.error); // used by the Homey thermostat, updates only when the airco is turned on
 		}
 		this.setCapabilityValue('measure_temperature.inside', inside)
@@ -608,7 +621,7 @@ class AirAirHPDevice extends Device {
 			oldOutsideTemperature = outside;
 			this.log('oldOutsideTemperature: ', oldOutsideTemperature);
 		}
-		
+
 		// --- Inside
 		if (oldInsideTemperature !== inside) {
 			this.log('New inside airco temperature °C:', inside);
