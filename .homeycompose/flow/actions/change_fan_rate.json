@@ -4,6 +4,10 @@
         "en": "Select the fan rate",
         "nl": "Kies de ventilator snelheid"
     },
+    "titleFormatted": {
+        "en": "Select the fan rate [[frate]]",
+        "nl": "Kies de ventilator snelheid [[frate]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

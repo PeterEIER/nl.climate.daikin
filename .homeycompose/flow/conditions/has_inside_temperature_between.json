@@ -4,6 +4,10 @@
         "en": "The inside temperature !{{is|isn't}} between",
         "nl": "De binnentemperatuur !{{is|is niet}} tussen"
     },
+    "titleFormatted": {
+        "en": "The inside temperature !{{is|isn't}} between [[inside_temperature_from]] and [[inside_temperature_to]]",
+        "nl": "De binnentemperatuur !{{is|is niet}} tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

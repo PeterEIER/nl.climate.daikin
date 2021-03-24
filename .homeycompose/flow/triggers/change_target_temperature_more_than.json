@@ -4,6 +4,10 @@
         "en": "The target temperature is more than",
         "nl": "De ingestelde temperatuur is meer dan"
     },
+    "titleFormatted": {
+        "en": "The target temperature is more than [[target_temperature_more]]",
+        "nl": "De ingestelde temperatuur is meer dan [[target_temperature_more]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

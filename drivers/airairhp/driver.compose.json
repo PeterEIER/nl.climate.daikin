@@ -128,12 +128,12 @@
 			"id": "tiletemp",
 			"type": "radio",
 			"label": {
-				"en": "Tile temperature",
-				"nl": "Tegel temperatuur"
+				"en": "Tile shows",
+				"nl": "Tegel toont"
 			},
 			"hint": {
-				"en": "Fuction of the tile its temperature indicator when the airco is turned off. Note: whenever inside temperature is selected the target temperature might change when Homey is rebooted, the app is updated etc.",
-				"nl": "Functie van de tegel haar temperatuur indicator wanneer de airco is uitgeschakeld. Noot: wanneer binnentemperatuur is geselecteerd bestaat de kans dat ingestelde temperatuur wijzigd bij een reboot van Homey, een applicatie update etc."
+				"en": "Sets the fuction of the tile its temperature indicator, and for that matter that of the thermostat UI, when the airco is turned OFF. The recommended and default setting is 'Target temperature'. >>>CAUTION<<< By selecting 'Inside temperature' the airco's target temperature (only when the airco is turned off) will start to follow the inside temperature!! Please keep this in mind when creating flow cards that i.e. act on a set target temperature. This setting might also influence the set target temperture during a reboot, when the app is updated etc. Note: the 'Inside temperature' setting behavior is the behavior of all versions prior to version 5.",
+				"nl": "Stelt de functie van de tegel temperatuur indicator in, en evenzo die van de thermostaat gebruikersinterface, wanneer de airco is UITGESCHAKELD. De geadviseerde instelling is 'Ingestelde temperatuur'. >>>OPGELET<<< Door het selecteren van 'Binnentemperatuur' zal de airco's ingestelde temperatuur (alleen wanneer de airco is uitgeschakeld) de binnentemperatuur gaan volgen!! Houd rekening met dit gedrag bij het maken van flow kaartjes welke bijvoorbeeld reageren op de ingestelde temperatuur. Deze instelling kan ook invloed hebben op het gedrag van de ingestelde temperatuur tijdens een reboot, tijdens het updaten van de applicatie etc. Opmerking: wat nu de 'Binnentemperatuur' instelling heet is het gedrag geweest in alle versies voorafgaand aan versie 5."
 			},
 			"value": "target",
 			"values": [{

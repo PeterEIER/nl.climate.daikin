@@ -4,6 +4,10 @@
         "en": "Turn econo mode on or off",
         "nl": "Schakel de econo modus aan of uit"
     },
+    "titleFormatted": {
+        "en": "Turn econo mode [[smecono]]",
+        "nl": "Schakel de econo modus [[smecono]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

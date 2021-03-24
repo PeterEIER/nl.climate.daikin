@@ -4,6 +4,10 @@
         "en": "Change target humidity to",
         "nl": "Wijzig de ingestelde luchtvochtigheid in"
     },
+    "titleFormatted": {
+        "en": "Change target humidity to [[ahum]]",
+        "nl": "Wijzig de ingestelde luchtvochtigheid in [[ahum]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

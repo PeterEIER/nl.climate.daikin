@@ -4,6 +4,10 @@
         "en": "Change target temperature to",
         "nl": "Wijzig de ingestelde temperatuur in"
     },
+    "titleFormatted": {
+        "en": "Change target temperature to [[atemp]]",
+        "nl": "Wijzig de ingestelde temperatuur in [[atemp]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

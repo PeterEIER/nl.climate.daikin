@@ -4,6 +4,10 @@
         "en": "The outside temperature is between",
         "nl": "De buitentemperatuur is tussen"
     },
+    "titleFormatted": {
+        "en": "The outside temperature is between [[outside_temperature_from]] and [[outside_temperature_to]]",
+        "nl": "De buitentemperatuur is tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

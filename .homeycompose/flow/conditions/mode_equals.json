@@ -4,6 +4,10 @@
         "en": "The operating mode !{{equals|does not equal}}",
         "nl": "De werkmodus komt !{{overeen met|komt niet overeen met}}"
     },
+    "titleFormatted": {
+        "en": "The operating mode !{{equals|does not equal}} [[mode]]",
+        "nl": "De werkmodus komt !{{overeen met|komt niet overeen met}} [[mode]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

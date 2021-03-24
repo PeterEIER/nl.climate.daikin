@@ -242,4 +242,5 @@ If you like the app, consider buying me a cup of coffee!
 - 10-MAR-21: Bug fix - (inside) temperature changed flowcard was missing
 - 12-MAR-21: Bug fix - action flowcard logic Fan Rate and Fan Direction
 - 21-MAR-21: Tile temperature indictor - user selectable between inside and target temperature
+- 24-MAR-21: tilteFormatted added to flowcards in support of Homey's webbased application
 

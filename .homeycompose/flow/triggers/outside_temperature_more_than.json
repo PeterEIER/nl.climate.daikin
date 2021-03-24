@@ -4,6 +4,10 @@
         "en": "The outside temperature is more than",
         "nl": "De buitentemperatuur is meer dan"
     },
+    "titleFormatted": {
+        "en": "The outside temperature is more than [[outside_temperature_more]]",
+        "nl": "De buitentemperatuur is meer dan [[outside_temperature_more]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

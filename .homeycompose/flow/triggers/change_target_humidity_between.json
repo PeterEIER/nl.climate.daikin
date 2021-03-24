@@ -4,6 +4,10 @@
         "en": "The target humidity is between",
         "nl": "De ingestelde luchtvochtigheid is tussen"
     },
+    "titleFormatted": {
+        "en": "The target humidity is between [[target_humidity_from]] and [[target_humidity_to]]",
+        "nl": "De ingestelde luchtvochtigheid is tussen [[target_humidity_from]] en [[target_humidity_to]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

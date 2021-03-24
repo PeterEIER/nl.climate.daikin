@@ -4,6 +4,10 @@
         "en": "The target temperature !{{is|isn't}} less than",
         "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan"
     },
+    "titleFormatted": {
+        "en": "The target temperature !{{is|isn't}} less than [[target_temperature_less]]",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

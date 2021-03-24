@@ -4,6 +4,10 @@
         "en": "Change target temperature by °C",
         "nl": "Wijzig de ingestelde temperatuur met °C"
     },
+    "titleFormatted": {
+        "en": "Change target temperature by [[bytemp]] °C",
+        "nl": "Wijzig de ingestelde temperatuur met [[bytemp]] °C"
+    },
     "args": [{
         "name": "device",
         "type": "device",

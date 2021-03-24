@@ -4,6 +4,10 @@
         "en": "When the operating mode has changed to",
         "nl": "Wanneer de werkmodus is veranderd in"
     },
+    "titleFormatted": {
+        "en": "When the operating mode has changed to [[mode]]",
+        "nl": "Wanneer de werkmodus is veranderd in [[mode]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

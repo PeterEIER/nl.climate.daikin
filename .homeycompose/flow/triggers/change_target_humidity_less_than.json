@@ -4,6 +4,10 @@
         "en": "The target humidity is less than",
         "nl": "De ingestelde luchtvochtigheid is minder dan"
     },
+    "titleFormatted": {
+        "en": "The target humidity is less than [[target_humidity_less]]",
+        "nl": "De ingestelde luchtvochtigheid is minder dan [[target_humidity_less]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",

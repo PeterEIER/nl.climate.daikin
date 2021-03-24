@@ -4,6 +4,10 @@
         "en": "Select the sweep mode",
         "nl": "Kies de gewenste lamellen richting modus"
     },
+    "titleFormatted": {
+        "en": "Select the sweep mode [[fdir]]",
+        "nl": "Kies de gewenste lamellen richting modus [[fdir]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

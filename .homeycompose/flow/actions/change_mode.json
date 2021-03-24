@@ -4,6 +4,10 @@
         "en": "Select the operating mode",
         "nl": "Kies de werkmodus"
     },
+    "titleFormatted": {
+        "en": "Select the operating mode [[mode]]",
+        "nl": "Kies de werkmodus [[mode]]"
+    },
     "args": [{
         "type": "device",
         "name": "device",

@@ -4,6 +4,10 @@
         "en": "The target temperature !{{is|isn't}} between",
         "nl": "De ingestelde temperatuur !{{is|is niet}} tussen"
     },
+    "titleFormatted": {
+        "en": "The target temperature !{{is|isn't}} between [[target_temperature_from]] and [[target_temperature_to]]",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} tussen [[target_temperature_from]] en [[target_temperature_to]]"
+    },
     "args": [{
         "name": "device",
         "type": "device",
