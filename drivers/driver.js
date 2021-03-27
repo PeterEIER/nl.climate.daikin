@@ -142,9 +142,9 @@ class Driver extends Homey.Driver {
       		break;
       	case 5:
       		device.addCapability('special_mode_eco');
-      		device.addCapability('special_mode_pwr');
-      		device.removeCapability('special_mode_str');
-      		device.removeCapability('target_humidity');
+      		device.removeCapability('special_mode_pwr');
+      		device.addCapability('special_mode_str');
+      		device.addCapability('target_humidity');
 			console.log('Added/Updated special modes capabilities... Special Mode Id: 5');
       		break;
       	case 6:

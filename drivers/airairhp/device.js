@@ -516,50 +516,129 @@ class AirAirHPDevice extends Device {
 		}
 
 		// ---- special modes
-		const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
-		this.log('specialModeResponse',specialModeResponse);
-		if (specialModeResponse === '') {
-			this.setCapabilityValue('special_mode_eco', "off")
-				.catch(this.error); 
-			this.setCapabilityValue('special_mode_pwr', "off")
-				.catch(this.error); 
-			this.setCapabilityValue('special_mode_str', "off")
-				.catch(this.error); 
-			this.log('Special Modes: All special modes turned OFF');
+		// econo
+		if ((spmode === 1) || (spmode === 3) || (spmode === 5) || (spmode === 7)) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+			if (specialModeResponse === '12') {
+				this.setCapabilityValue('special_mode_eco', "on")
+					.catch(this.error);
+				this.log('Special Mode: Econo turned ON');
+			}
 		}
 		// powerful
-		if (specialModeResponse === '2') {
-			this.setCapabilityValue('special_mode_pwr', "on")
-				.catch(this.error);
-			this.log('Special Mode: Poweful turned ON');
-		}
-		// econo
-		if (specialModeResponse === '12') {
-			this.setCapabilityValue('special_mode_eco', "on")
-				.catch(this.error);
-			this.log('Special Mode: Econo turned ON');
+		if ((spmode === 2) || (spmode === 3) || (spmode === 6) || (spmode === 7)) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+			if (specialModeResponse === '2') {
+				this.setCapabilityValue('special_mode_pwr', "on")
+					.catch(this.error);
+				this.log('Special Mode: Poweful turned ON');
+			}
 		}
 		// streamer
-		if (specialModeResponse === '13') {
-			this.setCapabilityValue('special_mode_str', "on")
-				.catch(this.error);
-			this.log('Special Mode: Streamer turned ON');
-		}
-		// powerfull/streamer
-		if (specialModeResponse === '2/13') {
-			this.setCapabilityValue('special_mode_pwr', "on")
-			 	.catch(this.error);
-			this.setCapabilityValue('special_mode_str', "on")
-			 	.catch(this.error);
-			this.log('Special Combi Mode: Powerfull+Streamer turned ON');
+		if ((spmode === 4) || (spmode === 5) || (spmode === 6) || (spmode === 7)) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+			if (specialModeResponse === '13') {
+				this.setCapabilityValue('special_mode_str', "on")
+					.catch(this.error);
+				this.log('Special Mode: Streamer turned ON');
+			}
 		}
 		// econo/streamer
-		if (specialModeResponse === '12/13') {
-			this.setCapabilityValue('special_mode_eco', "on")
-		 	    .catch(this.error);
-			this.setCapabilityValue('special_mode_str', "on")
-		 		.catch(this.error);
-			this.log('Special Combi Mode: Econo+Streamer turned ON');
+		if ((spmode === 5) || (spmode === 7)) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+			if (specialModeResponse === '12/13') {
+				this.setCapabilityValue('special_mode_eco', "on")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_str', "on")
+					.catch(this.error);
+				this.log('Special Combi Mode: Econo+Streamer turned ON');
+			}
+		}
+		// powerfull/streamer
+		if ((spmode === 6) || (spmode === 7)) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+			if (specialModeResponse === '2/13') {
+				this.setCapabilityValue('special_mode_pwr', "on")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_str', "on")
+					.catch(this.error);
+				this.log('Special Combi Mode: Powerfull+Streamer turned ON');
+			}
+		}
+
+		//--- special modes - status returns "not applicable"
+		if (spmode === 1) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_eco', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 2) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_pwr', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 3) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_eco', "off")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_pwr', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 4) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_str', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 5) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_eco', "off")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_str', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 6) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_pwr', "off")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_str', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
+		}
+		if (spmode === 7) {
+			const specialModeResponse = String(control_info[3]); // '' = n/a
+			this.log('specialModeResponse', specialModeResponse);
+			if (specialModeResponse === '') {
+				this.setCapabilityValue('special_mode_eco', "off")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_pwr', "off")
+					.catch(this.error);
+				this.setCapabilityValue('special_mode_str', "off")
+					.catch(this.error);
+				this.log('Special Modes: All special modes turned OFF');
+			}
 		}
 
 		// ---- temperature
@@ -650,7 +729,7 @@ class AirAirHPDevice extends Device {
 		const inside = parseFloat(sensor_info[1]); //was >> Number(sensor_info[1]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
 		const outside = parseFloat(sensor_info[3]); //was >> Number(sensor_info[3]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
 		var capability_mode = this.getCapabilityValue('thermostat_mode_std');
-		if ( (capability_mode !== 'off') || ((capability_mode === 'off') && (tiletemp === 'inside')) ) {
+		if ((capability_mode !== 'off') || ((capability_mode === 'off') && (tiletemp === 'inside'))) {
 			this.setCapabilityValue('measure_temperature', inside)
 				.catch(this.error); // used by the Homey thermostat, updates only when the airco is turned on
 		}
@@ -748,6 +827,7 @@ class AirAirHPDevice extends Device {
 		const settings = this.getSettings();
 		const ip = settings.ip;
 		const demo_mode = settings.demomode;
+		const spmode = settings.spmode;
 		const useGetToPost = settings.useGetToPost;
 		const adapter = settings.adapter;
 		let options = {};
@@ -762,11 +842,13 @@ class AirAirHPDevice extends Device {
 		};
 
 		// Turn Streamer OFF when the airco is turned ON
-		var special_mode_str = this.getCapabilityValue('special_mode_str');
-		if ((acmode !== "off") && (special_mode_str === "on")) {
-			var advstate = 0;
-			util.daikinSpecialModeControl("streamer", ip, options, advstate);
-			this.log('Special mode: Off, function: Streamer');
+		if (spmode >= 4) {
+			var special_mode_str = this.getCapabilityValue('special_mode_str');
+			if ((acmode !== "off") && (special_mode_str === "on")) {
+				var advstate = 0;
+				util.daikinSpecialModeControl("streamer", ip, options, advstate);
+				this.log('Special mode: Off, function: Streamer');
+			}
 		}
 
 		this.log('thermostat_mode_std:', acmode);
