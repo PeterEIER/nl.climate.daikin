@@ -270,6 +270,7 @@ class AirAirHPDevice extends Device {
 		this.log('Streamer:', special_mode_str);
 
 		const settings = this.getSettings();
+		const demo_mode = settings.demomode;
 		const ip = settings.ip;
 		const useGetToPost = settings.useGetToPost;
 		const adapter = settings.adapter;
@@ -288,6 +289,7 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		if (special_mode_str === "on") {
+			util.daikinModeControl("off", ip, options, demo_mode); // turn airco off - streamer mode can only be activated when the airco is off
 			var advstate = 1;
 			this.log('Special mode: On, function: Streamer');
 		} else {
@@ -513,6 +515,53 @@ class AirAirHPDevice extends Device {
 			this._triggerAircoMode.trigger(device, tokens, state);
 		}
 
+		// ---- special modes
+		const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+		this.log('specialModeResponse',specialModeResponse);
+		if (specialModeResponse === '') {
+			this.setCapabilityValue('special_mode_eco', "off")
+				.catch(this.error); 
+			this.setCapabilityValue('special_mode_pwr', "off")
+				.catch(this.error); 
+			this.setCapabilityValue('special_mode_str', "off")
+				.catch(this.error); 
+			this.log('Special Modes: All special modes turned OFF');
+		}
+		// powerful
+		if (specialModeResponse === '2') {
+			this.setCapabilityValue('special_mode_pwr', "on")
+				.catch(this.error);
+			this.log('Special Mode: Poweful turned ON');
+		}
+		// econo
+		if (specialModeResponse === '12') {
+			this.setCapabilityValue('special_mode_eco', "on")
+				.catch(this.error);
+			this.log('Special Mode: Econo turned ON');
+		}
+		// streamer
+		if (specialModeResponse === '13') {
+			this.setCapabilityValue('special_mode_str', "on")
+				.catch(this.error);
+			this.log('Special Mode: Streamer turned ON');
+		}
+		// powerfull/streamer
+		if (specialModeResponse === '2/13') {
+			this.setCapabilityValue('special_mode_pwr', "on")
+			 	.catch(this.error);
+			this.setCapabilityValue('special_mode_str', "on")
+			 	.catch(this.error);
+			this.log('Special Combi Mode: Powerfull+Streamer turned ON');
+		}
+		// econo/streamer
+		if (specialModeResponse === '12/13') {
+			this.setCapabilityValue('special_mode_eco', "on")
+		 	    .catch(this.error);
+			this.setCapabilityValue('special_mode_str', "on")
+		 		.catch(this.error);
+			this.log('Special Combi Mode: Econo+Streamer turned ON');
+		}
+
 		// ---- temperature
 		const atemp = Number(control_info[4]);
 		this.log('target temperature °C:', atemp);
@@ -711,6 +760,14 @@ class AirAirHPDevice extends Device {
 		else options = {
 			useGetToPost: false
 		};
+
+		// Turn Streamer OFF when the airco is turned ON
+		var special_mode_str = this.getCapabilityValue('special_mode_str');
+		if ((acmode !== "off") && (special_mode_str === "on")) {
+			var advstate = 0;
+			util.daikinSpecialModeControl("streamer", ip, options, advstate);
+			this.log('Special mode: Off, function: Streamer');
+		}
 
 		this.log('thermostat_mode_std:', acmode);
 		// set thermostat mode i.e. cool, heat etc.
