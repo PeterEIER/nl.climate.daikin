@@ -11,7 +11,7 @@
     "args": [{
         "name": "device",
         "type": "device",
-        "filter": "driver_id=airairhp"
+        "filter": "driver_id=airairhp|airairhphk"
     }, {
         "name": "atemp",
         "type": "range",
