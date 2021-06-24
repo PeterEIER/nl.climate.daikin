@@ -10,3 +10,6 @@ appveyor.yml
 .eslintrc
 .vscode
 coverage
+.idea
+package-lock.json
+.eslintignore

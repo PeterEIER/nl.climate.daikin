@@ -216,10 +216,10 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		if (special_mode_eco === "on") {
-			var advstate = 1;
+			var advstate = '1';
 			this.log('Special mode: On, function: Econo');
 		} else {
-			var advstate = 0;
+			var advstate = '0';
 			this.log('Special mode: Off, function: Econo');
 		};
 
@@ -252,10 +252,10 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		if (special_mode_pwr === "on") {
-			var advstate = 1;
+			var advstate = '1';
 			this.log('Special mode: On, function: Powerful');
 		} else {
-			var advstate = 0;
+			var advstate = '0';
 			this.log('Special mode: Off, function: Powerful');
 		};
 
@@ -290,10 +290,10 @@ class AirAirHPDevice extends Device {
 
 		if (special_mode_str === "on") {
 			util.daikinModeControl("off", ip, options, demo_mode); // turn airco off - streamer mode can only be activated when the airco is off
-			var advstate = 1;
+			var advstate = '1';
 			this.log('Special mode: On, function: Streamer');
 		} else {
-			var advstate = 0;
+			var advstate = '0';
 			this.log('Special mode: Off, function: Steamer');
 		};
 
@@ -845,7 +845,7 @@ class AirAirHPDevice extends Device {
 		if (spmode >= 4) {
 			var special_mode_str = this.getCapabilityValue('special_mode_str');
 			if ((acmode !== "off") && (special_mode_str === "on")) {
-				var advstate = 0;
+				var advstate = '0';
 				util.daikinSpecialModeControl("streamer", ip, options, advstate);
 				this.log('Special mode: Off, function: Streamer');
 			}
