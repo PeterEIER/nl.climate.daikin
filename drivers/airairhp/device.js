@@ -216,10 +216,10 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		if (special_mode_eco === "on") {
-			var advstate = '1';
+			var advstate = 1;
 			this.log('Special mode: On, function: Econo');
 		} else {
-			var advstate = '0';
+			var advstate = 0;
 			this.log('Special mode: Off, function: Econo');
 		};
 
@@ -252,10 +252,10 @@ class AirAirHPDevice extends Device {
 			.catch(this.error);
 
 		if (special_mode_pwr === "on") {
-			var advstate = '1';
+			var advstate = 1;
 			this.log('Special mode: On, function: Powerful');
 		} else {
-			var advstate = '0';
+			var advstate = 0;
 			this.log('Special mode: Off, function: Powerful');
 		};
 
@@ -290,10 +290,10 @@ class AirAirHPDevice extends Device {
 
 		if (special_mode_str === "on") {
 			util.daikinModeControl("off", ip, options, demo_mode); // turn airco off - streamer mode can only be activated when the airco is off
-			var advstate = '1';
+			var advstate = 1;
 			this.log('Special mode: On, function: Streamer');
 		} else {
-			var advstate = '0';
+			var advstate = 0;
 			this.log('Special mode: Off, function: Steamer');
 		};
 
@@ -469,7 +469,7 @@ class AirAirHPDevice extends Device {
 		this.log('oldcapability_mode =', oldcapability_mode);
 		const demo_mode = settings.demomode;
 		const spmode = settings.spmode;
-		this.log('Special mode: case', spmode);
+		this.log('Special mode: use case number', spmode);
 
 		var amode = Number(control_info[2]);
 		if ((amode === 1) || (amode === 7)) amode = 0; // do not differentiate the modes: auto1 and auto2
@@ -565,11 +565,14 @@ class AirAirHPDevice extends Device {
 				this.log('Special Combi Mode: Powerfull+Streamer turned ON');
 			}
 		}
-
-		//--- special modes - status returns "not applicable"
+		// special mode status - status returns i.e. "adv=12"
+		const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
+		this.log('specialModeResponse: adv=', specialModeResponse);
+/*
+		//--- special modes - status returns i.e. "adv=12"
 		if (spmode === 1) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
@@ -578,7 +581,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 2) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
@@ -587,7 +590,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 3) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
@@ -598,7 +601,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 4) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_str', "off")
 					.catch(this.error);
@@ -607,7 +610,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 5) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
@@ -618,7 +621,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 6) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
@@ -629,7 +632,7 @@ class AirAirHPDevice extends Device {
 		}
 		if (spmode === 7) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
-			this.log('specialModeResponse', specialModeResponse);
+			this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
 				this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
@@ -640,7 +643,7 @@ class AirAirHPDevice extends Device {
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
-
+*/
 		// ---- temperature
 		const atemp = Number(control_info[4]);
 		this.log('target temperature °C:', atemp);
@@ -845,7 +848,7 @@ class AirAirHPDevice extends Device {
 		if (spmode >= 4) {
 			var special_mode_str = this.getCapabilityValue('special_mode_str');
 			if ((acmode !== "off") && (special_mode_str === "on")) {
-				var advstate = '0';
+				var advstate = 0;
 				util.daikinSpecialModeControl("streamer", ip, options, advstate);
 				this.log('Special mode: Off, function: Streamer');
 			}
