@@ -134,9 +134,9 @@ class AirAirHPDriver extends Driver {
 			.registerRunListener((args, state) => {
 				this.log('triggerAircoMode fired');
 				const conditionMet = state.capability_mode === args.mode;
-				this.log('trigger - args.mode', args.mode);
-				this.log('trigger - state[capability_mode]', ( state['capability_mode']) );
-				this.log('trigger - conditionMet capability_mode', conditionMet);
+				//this.log('trigger - args.mode', args.mode);
+				//this.log('trigger - state[capability_mode]', ( state['capability_mode']) );
+				//this.log('trigger - conditionMet capability_mode', conditionMet);
 				return conditionMet;
 		});
 
@@ -288,6 +288,92 @@ class AirAirHPDriver extends Driver {
 				// this.log('condition - [settings.capability_mode]', settings.capability_mode);
 				// this.log('condition - args.mode', args.mode);
 				// this.log('condition - conditionMet capability_mode', conditionMet);
+				return conditionMet;
+		});
+
+		/* ** FAN SPEED CONDITIONS ** */
+		this.conditionFanRateEquals = this.homey.flow.getConditionCard('fan_rate_equals');
+		this.conditionFanRateEquals
+			.registerRunListener((args, state) => {
+				this.log('conditionFanRateEquals fired');
+				const device = args.device;
+				const devicestate = device.getState();
+				var fan_rate_equals = args.frateequals; // control_info[23] = 'A','B','3','4','5','6','7'
+				// The enumeration that is used by the airco is translated here in support of MQTTHub by Harrie de Groot
+				switch (fan_rate_equals) {
+					case 'A':
+						fan_rate_equals = 'auto';
+						break;
+
+					case 'B':
+						fan_rate_equals = 'quiet';
+						break;
+
+					case '3':
+						fan_rate_equals = 'level1';
+						break;
+
+					case '4':
+						fan_rate_equals = 'level2';
+						break;
+
+					case '5':
+						fan_rate_equals = 'level3';
+						break;
+
+					case '6':
+						fan_rate_equals = 'level4';
+						break;
+
+					case '7':
+						fan_rate_equals = 'level5';
+						break;
+
+					default:
+						this.log('unrecognized fan rate !!');
+						break;
+				}
+				let conditionMet = devicestate['fan_rate'] === fan_rate_equals;
+				//this.log('condition - [fan_rate]', devicestate['fan_rate']);
+				//this.log('condition - args.frateequals', fan_rate_equals);
+				//this.log('condition - conditionMet fan rate equals', conditionMet);
+				return conditionMet;
+		});
+
+		/* ** FAN DIRECTIONS CONDITIONS ** */
+		this.conditionFanDirectionEquals = this.homey.flow.getConditionCard('fan_direction_equals');
+		this.conditionFanDirectionEquals
+			.registerRunListener((args, state) => {
+				this.log('conditionFanDirectionEquals fired');
+				const device = args.device;
+				const devicestate = device.getState();
+				var fan_direction_equals = args.fdirequals; // control_info[24] = '0,'1','2','3'
+				// The enumeration that is used by the airco is translated here in support of MQTTHub by Harrie de Groot
+				switch (fan_direction_equals) {
+					case '0':
+						fan_direction_equals= 'stop';
+						break;
+
+					case '1':
+						fan_direction_equals = 'vertical';
+						break;
+
+					case '2':
+						fan_direction_equals = 'horizontal';
+						break;
+
+					case '3':
+						fan_direction_equals = '3d';
+						break;
+
+					default:
+						this.log('unrecognized fan direction !!');
+						break;
+				}
+				let conditionMet = devicestate['fan_direction'] === fan_direction_equals;
+				//this.log('condition - [fan_direction]', devicestate['fan_direction']);
+				//this.log('condition - args.fdirequals', fan_direction_equals);
+				//this.log('condition - conditionMet fan dir equals', conditionMet);
 				return conditionMet;
 		});
 
@@ -654,7 +740,7 @@ class AirAirHPDriver extends Driver {
 						break;
 
 					default:
-						console.log('unrecognized fan rate !!, auto selected !!');
+						this.log('unrecognized fan rate !!, auto selected !!');
 						fan_rate = 'auto';
 						break;
 				}
@@ -709,7 +795,7 @@ class AirAirHPDriver extends Driver {
 						break;
 
 					default:
-						console.log('unrecognized fan direction !!, fan turned off !!');
+						this.log('unrecognized fan direction !!, fan turned off !!');
 						var fan_direction = 'stop';
 						break;
 				}

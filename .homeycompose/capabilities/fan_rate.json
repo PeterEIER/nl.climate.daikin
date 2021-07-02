@@ -1,7 +1,7 @@
 {
     "type": "enum",
     "title": {
-        "en": "Airflow Rate",
+        "en": "Airflow",
         "nl": "Luchtdebiet"
     },
     "getable": true,

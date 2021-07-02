@@ -1,19 +1,19 @@
 {
-    "id": "change_fan_rate",
+    "id": "fan_rate_equals",
     "title": {
-        "en": "Select the airflow speed",
-        "nl": "Kies de ventilator snelheid"
+        "en": "The airflow rate !{{equals|does not equal}}",
+        "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "Select the airflow speed [[frate]]",
-        "nl": "Kies de ventilator snelheid [[frate]]"
+        "en": "The airflow rate !{{equals|does not equal}} [[frateequals]]",
+        "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}} [[frateequals]]"
     },
     "args": [{
         "type": "device",
         "name": "device",
         "filter": "driver_id=airairhp"
     }, {
-        "name": "frate",
+        "name": "frateequals",
         "type": "dropdown",
         "values": [{
             "id": "A",
@@ -60,5 +60,3 @@
         }]
     }]
 }
-
-

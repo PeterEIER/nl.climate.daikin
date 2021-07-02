@@ -12,7 +12,7 @@
   "category": [
     "climate"
   ],
-  "version": "5.1.1",
+  "version": "5.1.2",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "athomForumDiscussionId": 2082,
@@ -617,6 +617,131 @@
       }
     ],
     "conditions": [
+      {
+        "id": "fan_direction_equals",
+        "title": {
+          "en": "The sweep mode !{{equals|does not equal}}",
+          "nl": "De lamellen richting !{{overeen met|komt niet overeen met}}"
+        },
+        "titleFormatted": {
+          "en": "The sweep mode !{{equals|does not equal}} [[fdirequals]]",
+          "nl": "De lamellen richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airairhp"
+          },
+          {
+            "name": "fdirequals",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "Stop",
+                  "nl": "Stop"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "Vertical",
+                  "nl": "Vertikaal"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Horizontal",
+                  "nl": "Horizontaal"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "3D",
+                  "nl": "3D"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fan_rate_equals",
+        "title": {
+          "en": "The airflow rate !{{equals|does not equal}}",
+          "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}}"
+        },
+        "titleFormatted": {
+          "en": "The airflow rate !{{equals|does not equal}} [[frateequals]]",
+          "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}} [[frateequals]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airairhp"
+          },
+          {
+            "name": "frateequals",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "A",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Auto"
+                }
+              },
+              {
+                "id": "B",
+                "label": {
+                  "en": "Quiet",
+                  "nl": "Stil"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "Level 1",
+                  "nl": "Niveau 1"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Level 2",
+                  "nl": "Niveau 2"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "Level 3",
+                  "nl": "Niveau 3"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "Level 4",
+                  "nl": "Niveau 4"
+                }
+              },
+              {
+                "id": "7",
+                "label": {
+                  "en": "Level 5",
+                  "nl": "Niveau 5"
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "has_inside_temperature_between",
         "title": {
@@ -1294,11 +1419,11 @@
       {
         "id": "change_fan_rate",
         "title": {
-          "en": "Select the fan rate",
+          "en": "Select the airflow speed",
           "nl": "Kies de ventilator snelheid"
         },
         "titleFormatted": {
-          "en": "Select the fan rate [[frate]]",
+          "en": "Select the airflow speed [[frate]]",
           "nl": "Kies de ventilator snelheid [[frate]]"
         },
         "args": [
@@ -1957,7 +2082,7 @@
     "fan_rate": {
       "type": "enum",
       "title": {
-        "en": "Airflow Rate",
+        "en": "Airflow",
         "nl": "Luchtdebiet"
       },
       "getable": true,
