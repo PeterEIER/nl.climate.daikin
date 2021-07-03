@@ -1,12 +1,12 @@
 {
     "id": "change_fan_rate",
     "title": {
-        "en": "Select the airflow speed",
-        "nl": "Kies de ventilator snelheid"
+        "en": "Select the airflow rate",
+        "nl": "Kies de ventilatorsnelheid"
     },
     "titleFormatted": {
-        "en": "Select the airflow speed [[frate]]",
-        "nl": "Kies de ventilator snelheid [[frate]]"
+        "en": "Select the airflow rate [[frate]]",
+        "nl": "Kies de ventilatorsnelheid [[frate]]"
     },
     "args": [{
         "type": "device",

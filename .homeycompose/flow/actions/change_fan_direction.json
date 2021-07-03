@@ -1,12 +1,12 @@
 {
     "id": "change_fan_direction",
     "title": {
-        "en": "Select the sweep mode",
-        "nl": "Kies de gewenste lamellen richting modus"
+        "en": "Select the airflow direction",
+        "nl": "Kies de lamellen uitblaas richting"
     },
     "titleFormatted": {
-        "en": "Select the sweep mode [[fdir]]",
-        "nl": "Kies de gewenste lamellen richting modus [[fdir]]"
+        "en": "Select the airflow direction [[fdir]]",
+        "nl": "Kies de uitblaas richting [[fdir]]"
     },
     "args": [{
         "type": "device",

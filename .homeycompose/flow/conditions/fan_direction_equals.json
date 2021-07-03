@@ -1,12 +1,12 @@
 {
     "id": "fan_direction_equals",
     "title": {
-        "en": "The sweep mode !{{equals|does not equal}}",
-        "nl": "De lamellen richting !{{overeen met|komt niet overeen met}}"
+        "en": "The airflow direction !{{equals|does not equal}}",
+        "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "The sweep mode !{{equals|does not equal}} [[fdirequals]]",
-        "nl": "De lamellen richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+        "en": "The airflow direction !{{equals|does not equal}} [[fdirequals]]",
+        "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
     },
     "args": [{
         "type": "device",

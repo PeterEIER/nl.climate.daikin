@@ -12,7 +12,7 @@
   "category": [
     "climate"
   ],
-  "version": "5.1.3",
+  "version": "5.1.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "athomForumDiscussionId": 2082,
@@ -462,8 +462,8 @@
               {
                 "id": "dehumid",
                 "label": {
-                  "en": "Dehumidfication",
-                  "nl": "Ontvochtigen"
+                  "en": "Dry",
+                  "nl": "Drogen"
                 }
               },
               {
@@ -620,12 +620,12 @@
       {
         "id": "fan_direction_equals",
         "title": {
-          "en": "The sweep mode !{{equals|does not equal}}",
-          "nl": "De lamellen richting !{{overeen met|komt niet overeen met}}"
+          "en": "The airflow direction !{{equals|does not equal}}",
+          "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The sweep mode !{{equals|does not equal}} [[fdirequals]]",
-          "nl": "De lamellen richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+          "en": "The airflow direction !{{equals|does not equal}} [[fdirequals]]",
+          "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
         },
         "args": [
           {
@@ -672,12 +672,12 @@
       {
         "id": "fan_rate_equals",
         "title": {
-          "en": "The airflow rate !{{equals|does not equal}}",
-          "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}}"
+          "en": "The fan speed !{{equals|does not equal}}",
+          "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The airflow rate !{{equals|does not equal}} [[frateequals]]",
-          "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}} [[frateequals]]"
+          "en": "The fan speed !{{equals|does not equal}} [[frateequals]]",
+          "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}} [[frateequals]]"
         },
         "args": [
           {
@@ -1186,11 +1186,11 @@
         "id": "mode_econo_equals",
         "title": {
           "en": "The econo mode !{{equals|does not equal}}",
-          "nl": "De bespaarmodus komt !{{overeen met|komt niet overeen met}}"
+          "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
           "en": "The econo mode !{{equals|does not equal}} [[smode_econo]]",
-          "nl": "De bespaarmodus komt !{{overeen met|komt niet overeen met}} [[smode_econo]]"
+          "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}} [[smode_econo]]"
         },
         "args": [
           {
@@ -1224,11 +1224,11 @@
         "id": "mode_equals",
         "title": {
           "en": "The operating mode !{{equals|does not equal}}",
-          "nl": "De werkmodus komt !{{overeen met|komt niet overeen met}}"
+          "nl": "De werkmodus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
           "en": "The operating mode !{{equals|does not equal}} [[mode]]",
-          "nl": "De werkmodus komt !{{overeen met|komt niet overeen met}} [[mode]]"
+          "nl": "De werkmodus !{{komt overeen met|komt niet overeen met}} [[mode]]"
         },
         "args": [
           {
@@ -1271,8 +1271,8 @@
               {
                 "id": "dehumid",
                 "label": {
-                  "en": "Dehumidfication",
-                  "nl": "Ontvochtigen"
+                  "en": "Dry",
+                  "nl": "Drogen"
                 }
               },
               {
@@ -1290,11 +1290,11 @@
         "id": "mode_pwrful_equals",
         "title": {
           "en": "The powerful mode !{{equals|does not equal}}",
-          "nl": "De krachtig mode komt !{{overeen met|komt niet overeen met}}"
+          "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
           "en": "The powerful mode !{{equals|does not equal}} [[smode_pwrful]]",
-          "nl": "De krachtig mode komt !{{overeen met|komt niet overeen met}} [[smode_pwrful]]"
+          "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}} [[smode_pwrful]]"
         },
         "args": [
           {
@@ -1328,11 +1328,11 @@
         "id": "mode_strmr_equals",
         "title": {
           "en": "The streamer mode !{{equals|does not equal}}",
-          "nl": "De streamer modus komt !{{overeen met|komt niet overeen met}}"
+          "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
           "en": "The streamer mode !{{equals|does not equal}} [[smode_strmr]]",
-          "nl": "De streamer modus komt !{{overeen met|komt niet overeen met}} [[smode_strmr]]"
+          "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}} [[smode_strmr]]"
         },
         "args": [
           {
@@ -1367,12 +1367,12 @@
       {
         "id": "change_fan_direction",
         "title": {
-          "en": "Select the sweep mode",
-          "nl": "Kies de gewenste lamellen richting modus"
+          "en": "Select the airflow direction",
+          "nl": "Kies de lamellen uitblaas richting"
         },
         "titleFormatted": {
-          "en": "Select the sweep mode [[fdir]]",
-          "nl": "Kies de gewenste lamellen richting modus [[fdir]]"
+          "en": "Select the airflow direction [[fdir]]",
+          "nl": "Kies de uitblaas richting [[fdir]]"
         },
         "args": [
           {
@@ -1419,12 +1419,12 @@
       {
         "id": "change_fan_rate",
         "title": {
-          "en": "Select the airflow speed",
-          "nl": "Kies de ventilator snelheid"
+          "en": "Select the airflow rate",
+          "nl": "Kies de ventilatorsnelheid"
         },
         "titleFormatted": {
-          "en": "Select the airflow speed [[frate]]",
-          "nl": "Kies de ventilator snelheid [[frate]]"
+          "en": "Select the airflow rate [[frate]]",
+          "nl": "Kies de ventilatorsnelheid [[frate]]"
         },
         "args": [
           {
@@ -2043,8 +2043,8 @@
     "fan_direction": {
       "type": "enum",
       "title": {
-        "en": "Swing",
-        "nl": "Zwenken"
+        "en": "Airflow direction",
+        "nl": "Richting uitblaas"
       },
       "getable": true,
       "setable": true,
@@ -2082,8 +2082,8 @@
     "fan_rate": {
       "type": "enum",
       "title": {
-        "en": "Airflow",
-        "nl": "Luchtdebiet"
+        "en": "Fan speed",
+        "nl": "Ventilatorsnelheid"
       },
       "getable": true,
       "setable": true,

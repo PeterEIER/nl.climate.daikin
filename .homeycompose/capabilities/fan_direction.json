@@ -1,8 +1,8 @@
 {
     "type": "enum",
     "title": {
-        "en": "Swing",
-        "nl": "Zwenken"
+        "en": "Airflow direction",
+        "nl": "Richting uitblaas"
     },
     "getable": true,
     "setable": true,

@@ -1,12 +1,12 @@
 {
     "id": "fan_rate_equals",
     "title": {
-        "en": "The airflow rate !{{equals|does not equal}}",
-        "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}}"
+        "en": "The fan speed !{{equals|does not equal}}",
+        "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "The airflow rate !{{equals|does not equal}} [[frateequals]]",
-        "nl": "De ventilator snelheid !{{overeen met|komt niet overeen met}} [[frateequals]]"
+        "en": "The fan speed !{{equals|does not equal}} [[frateequals]]",
+        "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}} [[frateequals]]"
     },
     "args": [{
         "type": "device",
