@@ -245,5 +245,6 @@ If you like the app, consider buying me a cup of coffee!
 - 24-MAR-21: tilteFormatted added to flowcards in support of Homey's webbased application
 - 27-MAR-21: special mode support improvements
 - 31-MAR-21: Bug fixes; homekit driver missing some flow cards
-- 24-JUN-21: Update Daikin Controller node module. Fixed a bug related to SpecialModes.
+- 24-JUN-21: Update Daikin Controller node module.
+- 03-JUL-21: Fixed a bug related to SpecialModes.
 
