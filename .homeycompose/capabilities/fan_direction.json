@@ -2,7 +2,7 @@
     "type": "enum",
     "title": {
         "en": "Airflow direction",
-        "nl": "Richting uitblaas"
+        "nl": "Richtinguitblaas"
     },
     "getable": true,
     "setable": true,

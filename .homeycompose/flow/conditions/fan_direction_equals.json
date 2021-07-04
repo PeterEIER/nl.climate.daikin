@@ -2,11 +2,11 @@
     "id": "fan_direction_equals",
     "title": {
         "en": "The airflow direction !{{equals|does not equal}}",
-        "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}}"
+        "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
         "en": "The airflow direction !{{equals|does not equal}} [[fdirequals]]",
-        "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+        "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
     },
     "args": [{
         "type": "device",

@@ -2,11 +2,11 @@
     "id": "change_fan_direction",
     "title": {
         "en": "Select the airflow direction",
-        "nl": "Kies de lamellen uitblaas richting"
+        "nl": "Kies de uitblaasrichting"
     },
     "titleFormatted": {
         "en": "Select the airflow direction [[fdir]]",
-        "nl": "Kies de uitblaas richting [[fdir]]"
+        "nl": "Kies de uitblaasrichting [[fdir]]"
     },
     "args": [{
         "type": "device",
