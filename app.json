@@ -12,7 +12,7 @@
   "category": [
     "climate"
   ],
-  "version": "5.1.4",
+  "version": "5.1.5",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "athomForumDiscussionId": 2082,
@@ -621,11 +621,11 @@
         "id": "fan_direction_equals",
         "title": {
           "en": "The airflow direction !{{equals|does not equal}}",
-          "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}}"
+          "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
           "en": "The airflow direction !{{equals|does not equal}} [[fdirequals]]",
-          "nl": "De uitblaas richting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+          "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
         },
         "args": [
           {
@@ -1368,11 +1368,11 @@
         "id": "change_fan_direction",
         "title": {
           "en": "Select the airflow direction",
-          "nl": "Kies de lamellen uitblaas richting"
+          "nl": "Kies de uitblaasrichting"
         },
         "titleFormatted": {
           "en": "Select the airflow direction [[fdir]]",
-          "nl": "Kies de uitblaas richting [[fdir]]"
+          "nl": "Kies de uitblaasrichting [[fdir]]"
         },
         "args": [
           {
@@ -2044,7 +2044,7 @@
       "type": "enum",
       "title": {
         "en": "Airflow direction",
-        "nl": "Richting uitblaas"
+        "nl": "Richtinguitblaas"
       },
       "getable": true,
       "setable": true,
