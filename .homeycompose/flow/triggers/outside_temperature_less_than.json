@@ -1,0 +1,29 @@
+{
+    "id": "outside_temperature_less_than",
+    "title": {
+        "en": "The outside temperature is less than",
+        "nl": "De buitentemperatuur is minder dan"
+    },
+    "titleFormatted": {
+        "en": "The outside temperature is less than [[ouside_temperature_less]]",
+        "nl": "De buitentemperatuur is minder dan [[ouside_temperature_less]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "ouside_temperature_less",
+        "type": "range",
+        "min": -50,
+        "max": 50,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "Less than",
+            "nl": "Minder dan"
+        }
+    }]
+}

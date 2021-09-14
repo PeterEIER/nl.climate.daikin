@@ -1,0 +1,28 @@
+{
+    "id": "change_target_temp_by",
+    "title": {
+        "en": "Change target temperature by °C",
+        "nl": "Wijzig de ingestelde temperatuur met °C"
+    },
+    "titleFormatted": {
+        "en": "Change target temperature by [[bytemp]] °C",
+        "nl": "Wijzig de ingestelde temperatuur met [[bytemp]] °C"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp|airairhphk"
+    }, {
+        "name": "bytemp",
+        "type": "range",
+        "min": -5,
+        "max": 5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "Change target temperature by",
+            "nl": "Wijzig de ingestelde temperatuur met"
+        }
+    }]
+}

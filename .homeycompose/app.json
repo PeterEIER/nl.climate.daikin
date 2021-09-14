@@ -1,0 +1,45 @@
+{
+	"id": "nl.climate.daikin",
+	"name": {
+		"en": "Daikin AI",
+		"nl": "Daikin AI"
+	},
+	"description": {
+		"en": "Experience your perfect climate",
+		"nl": "Ervaar jouw perfecte klimaat"
+	},
+	"category": [
+		"climate"
+	],
+	"version": "5.1.8",
+	"compatibility": ">=5.0.0",
+	"sdk": 3,
+	"athomForumDiscussionId": 2082,
+	"homeyCommunityTopicId": 158,
+	"brandColor": "#2E96D0",
+	"author": {
+		"name": "Peter Eier",
+		"email": "peter.eier@upcmail.nl"
+	},
+	"contributors": {
+		"developers": [{
+			"name": "Peter EIER",
+			"email": "peter.eier@upcmail.nl"
+		}]
+	},
+	"contributing": {
+		"donate": {
+			"paypal": {
+				"username": "donations4petereier"
+			}
+		}
+	},
+	"tags": {
+		"en": ["Daikin", "airconditioner", "airconditioning", "airco", "thermostat", "fan", "homekit", "home", "climate"],
+		"nl": ["Daikin", "airconditioner", "airconditioning", "airco", "thermostaat", "ventilator", "homekit", "home", "klimaat"]
+	},
+	"images": {
+		"large": "/assets/images/large.png",
+		"small": "/assets/images/small.png"
+	}
+}

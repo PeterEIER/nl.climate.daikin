@@ -1,0 +1,42 @@
+{
+    "id": "has_outside_temperature_between",
+    "title": {
+        "en": "The outside temperature !{{is|isn't}} between",
+        "nl": "De buitentemperatuur !{{is|is niet}} tussen"
+    },
+    "titleFormatted": {
+        "en": "The outside temperature !{{is|isn't}} between [[outside_temperature_from]] and [[outside_temperature_to]]",
+        "nl": "De buitentemperatuur !{{is|is niet}} tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "outside_temperature_from",
+        "type": "range",
+        "min": -50,
+        "max": 50,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "From",
+            "nl": "Van"
+        }
+    }, {
+        "name": "outside_temperature_to",
+        "type": "range",
+        "min": -50,
+        "max": 50,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "To",
+            "nl": "Tot"
+        }
+    }]
+}

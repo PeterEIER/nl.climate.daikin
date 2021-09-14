@@ -1,0 +1,42 @@
+{
+    "id": "has_inside_temperature_between",
+    "title": {
+        "en": "The inside temperature !{{is|isn't}} between",
+        "nl": "De binnentemperatuur !{{is|is niet}} tussen"
+    },
+    "titleFormatted": {
+        "en": "The inside temperature !{{is|isn't}} between [[inside_temperature_from]] and [[inside_temperature_to]]",
+        "nl": "De binnentemperatuur !{{is|is niet}} tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "inside_temperature_from",
+        "type": "range",
+        "min": -20,
+        "max": 80,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "From",
+            "nl": "Van"
+        }
+    }, {
+        "name": "inside_temperature_to",
+        "type": "range",
+        "min": -20,
+        "max": 80,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "To",
+            "nl": "Tot"
+        }
+    }]
+}

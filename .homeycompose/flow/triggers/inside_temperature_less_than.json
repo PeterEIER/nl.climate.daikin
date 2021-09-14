@@ -1,0 +1,29 @@
+{
+    "id": "inside_temperature_less_than",
+    "title": {
+        "en": "The inside temperature is less than",
+        "nl": "De binnentemperatuur is minder dan"
+    },
+    "titleFormatted": {
+        "en": "The inside temperature is less than [[inside_temperature_less]]",
+        "nl": "De binnentemperatuur is minder dan [[inside_temperature_less]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "inside_temperature_less",
+        "type": "range",
+        "min": -20,
+        "max": 80,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "Less than",
+            "nl": "Minder than"
+        }
+    }]
+}

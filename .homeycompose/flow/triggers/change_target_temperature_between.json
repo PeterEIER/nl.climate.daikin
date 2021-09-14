@@ -1,0 +1,42 @@
+{
+    "id": "change_target_temperature_between",
+    "title": {
+        "en": "The target temperature is between",
+        "nl": "De ingestelde temperatuur is tussen"
+    },
+    "titleFormatted": {
+        "en": "The target temperature is between [[target_temperature_from]] and [[target_temperature_to]]",
+        "nl": "De ingestelde temperatuur is tussen [[target_temperature_from]] en [[target_temperature_to]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "target_temperature_from",
+        "type": "range",
+        "min": 10,
+        "max": 32,
+		"step": 1,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "From",
+            "nl": "Van"
+        }
+    }, {
+        "name": "target_temperature_to",
+        "type": "range",
+        "min": 10,
+        "max": 32,
+		"step": 1,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "To",
+            "nl": "Tot"
+        }
+    }]
+}

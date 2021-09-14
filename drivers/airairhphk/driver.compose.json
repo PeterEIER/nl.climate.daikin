@@ -1,0 +1,87 @@
+{
+    "name": {
+        "en": "Air-to-air heat pumps (HomeKit)",
+        "nl": "Lucht/Lucht warmtepompen (HomeKit)"
+    },
+    "class": "thermostat",
+    "capabilities": [
+        "thermostat_mode",
+        "target_temperature",
+        "measure_temperature"
+    ],
+    "images": {
+        "large": "/drivers/airairhphk/assets/images/large.png",
+        "small": "/drivers/airairhphk/assets/images/small.png"
+    },
+    "pair": [{
+        "id": "start"
+    }],
+    "settings": [{
+        "type": "group",
+        "label": {
+            "en": "Network, adatper type and firmware settings",
+            "nl": "Netwerk, adapter type en firmware instellingen"
+        },
+        "children": [{
+            "id": "ip",
+            "type": "text",
+            "pattern": "^(([01]?\\d\\d?|2[0-4]\\d|25[0-5]).){3}([01]?\\d\\d?|2[0-4]\\d|25[0-5])$",
+            "label": {
+                "en": "Airconditioners IP address",
+                "nl": "Airconditioners IP adres"
+            },
+            "hint": {
+                "en": "A static IP-address is recommended as DHCP is not supported.",
+                "nl": "Het gebruik van een statisch IP-adres wordt aanbevolen aangezien DHCP niet ondersteund wordt."
+            },
+            "value": ""
+        }, {
+            "id": "useGetToPost",
+            "type": "checkbox",
+            "label": {
+                "en": "Use new protocol",
+                "nl": "Gebruik nieuw protocol"
+            },
+            "hint": {
+                "en": "Switch between the new and old Daikin communication protocol.",
+                "nl": "Schakel tussen het nieuwe en oude Daikin communicatie protocol."
+            },
+            "value": true
+        }]
+    }, {
+        "type": "group",
+        "label": {
+            "en": "Other settings",
+            "nl": "Overige instellingen"
+        },
+        "children": [{
+            "id": "interval",
+            "type": "number",
+            "label": {
+                "en": "Refresh interval (in seconds)",
+                "nl": "Gegevens verversen elke (in seconden)"
+            },
+            "hint": {
+                "en": "Every x seconds the app will refresh its information.",
+                "nl": "Iedere x seconden zal de app haar gegevens verversen."
+            },
+            "value": 10,
+            "attr": {
+                "min": 5,
+                "max": 30
+            }
+        }, {
+            "id": "demomode",
+            "type": "checkbox",
+            "label": {
+                "en": "Demo mode",
+                "nl": "Demonstratie mode"
+            },
+            "hint": {
+                "en": "When enabled the airco will not power ON no matter what mode is selected. This way one can experiment with flows without having to worry about damaging the airconditioner.",
+                "nl": "Wanneer aangezet zal de airco niet aanschakelen ongeacht de gekozen modus. Dit maakt het mogelijk om vrijuit te experimenteren met flows zonder bang hoeven te zijn dat de airconditoner beschadigd raakt."
+            },
+            "value": false
+        }]
+    }]
+}

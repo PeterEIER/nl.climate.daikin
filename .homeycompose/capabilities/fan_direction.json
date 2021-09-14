@@ -1,0 +1,34 @@
+{
+    "type": "enum",
+    "title": {
+        "en": "Airflow direction",
+        "nl": "Richtinguitblaas"
+    },
+    "getable": true,
+    "setable": true,
+    "values": [{
+        "id": "stop",
+        "title": {
+            "en": "Stop",
+            "nl": "Stop"
+        }
+    }, {
+        "id": "vertical",
+        "title": {
+            "en": "Vertical",
+            "nl": "Vertikaal"
+        }
+    }, {
+        "id": "horizontal",
+        "title": {
+            "en": "Horizontal",
+            "nl": "Horizontaal"
+        }
+    }, {
+        "id": "3d",
+        "title": {
+            "en": "3D",
+            "nl": "3D"
+        }
+    }]
+}

@@ -1,0 +1,56 @@
+{
+    "id": "change_mode",
+    "title": {
+        "en": "Select the operating mode",
+        "nl": "Kies de werkmodus"
+    },
+    "titleFormatted": {
+        "en": "Select the operating mode [[mode]]",
+        "nl": "Kies de werkmodus [[mode]]"
+    },
+    "args": [{
+        "type": "device",
+        "name": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "mode",
+        "type": "dropdown",
+        "values": [{
+            "id": "off",
+            "label": {
+                "en": "Off",
+                "nl": "Uit"
+            }
+        }, {
+            "id": "cool",
+            "label": {
+                "en": "Cooling",
+                "nl": "Koelen"
+            }
+        }, {
+            "id": "heat",
+            "label": {
+                "en": "Heating",
+                "nl": "Verwarmen"
+            }
+        }, {
+            "id": "auto",
+            "label": {
+                "en": "Auto",
+                "nl": "Auto"
+            }
+        }, {
+            "id": "dehumid",
+            "label": {
+                "en": "Dry",
+                "nl": "Drogen"
+            }
+        }, {
+            "id": "fan",
+            "label": {
+                "en": "Fan",
+                "nl": "Ventilator"
+            }
+        }]
+    }]
+}

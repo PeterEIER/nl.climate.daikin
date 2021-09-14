@@ -1,0 +1,29 @@
+{
+    "id": "change_target_temp",
+    "title": {
+        "en": "Change target temperature to",
+        "nl": "Wijzig de ingestelde temperatuur in"
+    },
+    "titleFormatted": {
+        "en": "Change target temperature to [[atemp]]",
+        "nl": "Wijzig de ingestelde temperatuur in [[atemp]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp|airairhphk"
+    }, {
+        "name": "atemp",
+        "type": "range",
+        "min": 10,
+        "max": 32,
+		"step": 1,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "Target temperature",
+            "nl": "Ingestelde temperatuur"
+        }
+    }]
+}

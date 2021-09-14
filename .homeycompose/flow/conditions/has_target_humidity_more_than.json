@@ -1,0 +1,29 @@
+{
+    "id": "has_target_humidity_more_than",
+    "title": {
+        "en": "The target humidity !{{is|isn't}} more than",
+        "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} meer dan"
+    },
+    "titleFormatted": {
+        "en": "The target humidity !{{is|isn't}} more than [[target_humidity_more]]",
+        "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} meer dan [[target_humidity_more]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "target_humidity_more",
+        "type": "range",
+        "min": 0,
+        "max": 50,
+		"step": 1,
+		"label": "%",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "More than",
+            "nl": "Meer dan"
+        }
+    }]
+}

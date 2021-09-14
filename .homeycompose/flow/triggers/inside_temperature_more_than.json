@@ -1,0 +1,29 @@
+{
+    "id": "inside_temperature_more_than",
+    "title": {
+        "en": "The inside temperature is more than",
+        "nl": "De binnentemperatuur is meer dan"
+    },
+    "titleFormatted": {
+        "en": "The inside temperature is more than [[inside_temperature_more]]",
+        "nl": "De binnentemperatuur is meer dan [[inside_temperature_more]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "inside_temperature_more",
+        "type": "range",
+        "min": -20,
+        "max": 80,
+		"step": 0.5,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 1,
+        "title": {
+            "en": "More than",
+            "nl": "Meer dan"
+        }
+    }]
+}

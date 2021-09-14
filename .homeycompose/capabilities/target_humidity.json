@@ -1,0 +1,20 @@
+{
+    "type": "number",
+    "title": {
+        "en": "Target humidity",
+        "nl": "Doel luchtvochtigheid"
+    },
+    "units": {
+        "en": "%",
+        "nl": "%"
+    },
+    "insights": true,
+ 	"decimals": 0,
+	"chartType": "spline",
+    "getable": true,
+    "setable": true,
+    "min": 0,
+    "max": 50,
+    "step": 1,
+    "uiComponent": "slider"
+}

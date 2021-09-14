@@ -1,0 +1,29 @@
+{
+    "id": "has_target_temperature_more_than",
+    "title": {
+        "en": "The target temperature !{{is|isn't}} more than",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} meer dan"
+    },
+    "titleFormatted": {
+        "en": "The target temperature !{{is|isn't}} more than [[target_temperature_more]]",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} meer dan [[target_temperature_more]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "target_temperature_more",
+        "type": "range",
+        "min": 10,
+        "max": 32,
+		"step": 1,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "More than",
+            "nl": "Meer dan"
+        }
+    }]
+}

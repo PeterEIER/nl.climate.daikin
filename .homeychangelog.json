@@ -1,0 +1,81 @@
+{
+  "4.0.0": {
+    "en": "Intial 4.0.0 release.",
+    "nl": "Initiele 4.0.0 release."
+  },
+  "4.0.1": {
+    "en": "Improved v3 to v4 migration guidance in relation to special modes."
+  },
+  "4.0.2": {
+    "en": "Improved v3 to v4 migration guidance in relation to special modes."
+  },
+  "4.0.3": {
+    "en": "Improved v3 to v4 migration guidance in relation to special modes."
+  },
+  "4.0.4": {
+    "en": "Improved v3 to v4 migration guidance in relation to special modes. Improved error handling."
+  },
+  "4.0.5": {
+    "en": "Improved v3 to v4 migration guidance in relation to special modes. Improved error handling. Action flow card Dehumidification is now called Dry (same as mode)."
+  },
+  "5.0.0": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote."
+  },
+  "5.0.3": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote. 4/ Bug fixes."
+  },
+  "5.0.4": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote. 4/ Bug fixes."
+  },
+  "5.0.5": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote. 4/ Bug fixes."
+  },
+  "5.0.6": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote. 4/ Bug fixes."
+  },
+  "5.0.7": {
+    "en": "1/ Updates to support SDK3. 2/ Changes to thermostat UI behavior, when airco is turned off it will follow the target temperature setting (iso the inside temperature). 3/ Changes to the thermostat mode logic when externally powered on i.e. when using the IR remote. 4/ Bug fixes. 5/ App (store) description updated."
+  },
+  "5.0.8": {
+    "en": "Bug fix."
+  },
+  "5.0.9": {
+    "en": "Bug fixes; related to trigger flowcards (fan direction, fan rate)."
+  },
+  "5.0.10": {
+    "en": "1/ Bug fixes: action flowcard related (fan rate and fan Swing). 2/ Store desicription update."
+  },
+  "5.0.11": {
+    "en": "1/ Bug fixes: action flowcard related (fan rate and fan Swing). 2/ Store desicription update."
+  },
+  "5.0.12": {
+    "en": "Either the target temperature or the inside temperature can now be shown on the tile."
+  },
+  "5.0.13": {
+    "en": "1/ Either the target temperature or the inside temperature can now be shown on the tile. 2/ Flowcards are now 'titleFormatted' in support of Homey's web application."
+  },
+  "5.0.14": {
+    "en": "1/ Either the target temperature or the inside temperature can now be shown on the tile. 2/ Flowcards are now 'titleFormatted' in support of Homey's web application. 3/ Special modes support improvements. 4/ Bug fixes."
+  },
+  "5.0.15": {
+    "en": "1/ Either the target temperature or the inside temperature can now be shown on the tile. 2/ Flowcards are now 'titleFormatted' in support of Homey's web application. 3/ Special modes support improvements. 4/ Bug fixes."
+  },
+  "5.0.16": {
+    "en": "1/ Either the target temperature or the inside temperature can now be shown on the tile (homekit driver excluded). 2/ Flowcards are now 'titleFormatted' in support of Homey's web application. 3/ Special modes support improvements. 4/ Bug fixes."
+  },
+  "5.1.3": {
+    "en": "1/ Fixed a bug which prevented users to turn on special modes. 2/ Added two new condition flow cards (fan speed/direction). 3/ Updated to the latest available version of the 'unofficial' Daikin API. "
+  },
+  "5.1.4": {
+    "en": " \"en\": \"1/ Fixed a bug which prevented users to turn on special modes. 2/ Added two new condition flow cards (fan speed/direction). 3/ Improved translations. 4/ Updated to the latest available version of the 'unofficial' Daikin API."
+  },
+  "5.1.5": {
+    "en": "1/ Fixed a bug which prevented users to turn on special modes. 2/ Added two new condition flow cards (fan speed/direction). 3/ Improved translations. 4/ Updated to the latest available version of the Daikin API."
+  },
+  "5.1.7": {
+    "en": "1/ Fixed a bug which prevented users to turn on special modes. 2/ Added two new condition flow cards (fan speed/direction). 3/ Improved translations. 4/ Updated to the latest available version of the Daikin API."
+  },
+  "5.1.8": {
+    "en": "1/ Fixed a bug which prevented users to turn on special modes. 2/ Added two new condition flow cards (fan speed/direction). 3/ Improved translations. 4/ Updated to the latest available version of the Daikin API. 5/ App store description update."
+  }
+}

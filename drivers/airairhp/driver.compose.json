@@ -1,0 +1,154 @@
+{
+	"name": {
+		"en": "Air-to-air heat pumps",
+		"nl": "Lucht/Lucht warmtepompen"
+	},
+	"class": "thermostat",
+	"capabilities": [
+		"thermostat_mode_std",
+		"fan_rate",
+		"fan_direction",
+		"target_temperature",
+		"measure_temperature",
+		"measure_temperature.inside",
+		"measure_temperature.outside"
+	],
+	"capabilitiesOptions": {
+		"measure_temperature.inside": {
+			"title": {
+				"en": "Inside",
+				"nl": "Binnen"
+			},
+			"units": {
+				"en": "°C"
+			},
+			"insights": true,
+			"decimals": 1,
+			"chartType": "spline",
+			"getable": true,
+			"setable": false,
+			"uiComponent": "sensor"
+		},
+		"measure_temperature.outside": {
+			"title": {
+				"en": "Outside",
+				"nl": "Buiten"
+			},
+			"units": {
+				"en": "°C"
+			},
+			"insights": true,
+			"decimals": 1,
+			"chartType": "spline",
+			"getable": true,
+			"setable": false,
+			"uiComponent": "sensor"
+		}
+	},
+	"images": {
+		"large": "/drivers/airairhp/assets/images/large.png",
+		"small": "/drivers/airairhp/assets/images/small.png"
+	},
+	"pair": [{
+		"id": "start"
+	}],
+	"repair": [{
+		"id": "startrepair"
+	}, {
+		"id": "finish",
+		"template": "done"
+	}],
+	"settings": [{
+		"type": "group",
+		"label": {
+			"en": "Network, adatper type and firmware settings",
+			"nl": "Netwerk, adapter type en firmware instellingen"
+		},
+		"children": [{
+			"id": "ip",
+			"type": "text",
+			"pattern": "^(([01]?\\d\\d?|2[0-4]\\d|25[0-5]).){3}([01]?\\d\\d?|2[0-4]\\d|25[0-5])$",
+			"label": {
+				"en": "Airconditioners IP address",
+				"nl": "Airconditioners IP adres"
+			},
+			"hint": {
+				"en": "A static IP-address is recommended as DHCP is not supported.",
+				"nl": "Het gebruik van een statisch IP-adres wordt aanbevolen aangezien DHCP niet ondersteund wordt."
+			},
+			"value": ""
+		}, {
+			"id": "useGetToPost",
+			"type": "checkbox",
+			"label": {
+				"en": "Use new protocol",
+				"nl": "Gebruik nieuw protocol"
+			},
+			"hint": {
+				"en": "Switch between the new and old Daikin communication protocol.",
+				"nl": "Schakel tussen het nieuwe en oude Daikin communicatie protocol."
+			},
+			"value": true
+		}]
+	}, {
+		"type": "group",
+		"label": {
+			"en": "Other settings",
+			"nl": "Overige instellingen"
+		},
+		"children": [{
+			"id": "interval",
+			"type": "number",
+			"label": {
+				"en": "Refresh interval (in seconds)",
+				"nl": "Gegevens verversen elke (in seconden)"
+			},
+			"hint": {
+				"en": "Every x seconds the app will refresh its information.",
+				"nl": "Iedere x seconden zal de app haar gegevens verversen."
+			},
+			"value": 10,
+			"attr": {
+				"min": 5,
+				"max": 30
+			}
+		}, {
+			"id": "demomode",
+			"type": "checkbox",
+			"label": {
+				"en": "Demo mode",
+				"nl": "Demonstratie mode"
+			},
+			"hint": {
+				"en": "When enabled the airco will not power ON no matter what mode is selected. This way one can experiment with flows without having to worry about damaging the airconditioner.",
+				"nl": "Wanneer aangezet zal de airco niet aanschakelen ongeacht de gekozen modus. Dit maakt het mogelijk om vrijuit te experimenteren met flows zonder bang hoeven te zijn dat de airconditoner beschadigd raakt."
+			},
+			"value": false
+		}, {
+			"id": "tiletemp",
+			"type": "radio",
+			"label": {
+				"en": "Tile shows (airco OFF)",
+				"nl": "Tegel toont (airco UIT)"
+			},
+			"hint": {
+				"en": "Sets the fuction of the tile its temperature indicator, and for that matter that of the thermostat UI, when the airco is turned OFF. The recommended and default setting is 'Target temperature'. >>>CAUTION<<< By selecting 'Inside temperature' the airco's target temperature (only when the airco is turned off) will start to follow the inside temperature!! Please keep this in mind when creating flow cards that i.e. act on a set target temperature. This setting might also influence the set target temperture during a reboot, when the app is updated etc. Note: the 'Inside temperature' setting behavior is the behavior of all versions prior to version 5.",
+				"nl": "Stelt de functie van de tegel temperatuur indicator in, en evenzo die van de thermostaat gebruikersinterface, wanneer de airco is UITGESCHAKELD. De geadviseerde instelling is 'Ingestelde temperatuur'. >>>OPGELET<<< Door het selecteren van 'Binnentemperatuur' zal de airco's ingestelde temperatuur (alleen wanneer de airco is uitgeschakeld) de binnentemperatuur gaan volgen!! Houd rekening met dit gedrag bij het maken van flow kaartjes welke bijvoorbeeld reageren op de ingestelde temperatuur. Deze instelling kan ook invloed hebben op het gedrag van de ingestelde temperatuur tijdens een reboot, tijdens het updaten van de applicatie etc. Opmerking: wat nu de 'Binnentemperatuur' instelling heet is het gedrag geweest in alle versies voorafgaand aan versie 5."
+			},
+			"value": "target",
+			"values": [{
+				"id": "target",
+				"label": {
+					"en": "Target temperature",
+					"nl": "Ingestelde temperatuur"
+				}
+			}, {
+				"id": "inside",
+				"label": {
+					"en": "Inside temperature",
+					"nl": "Binnentemperatuur"
+				}
+			}]
+		}]
+	}]
+}

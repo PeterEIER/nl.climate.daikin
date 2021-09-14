@@ -1,0 +1,29 @@
+{
+    "id": "has_target_temperature_less_than",
+    "title": {
+        "en": "The target temperature !{{is|isn't}} less than",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan"
+    },
+    "titleFormatted": {
+        "en": "The target temperature !{{is|isn't}} less than [[target_temperature_less]]",
+        "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
+    },
+    "args": [{
+        "name": "device",
+        "type": "device",
+        "filter": "driver_id=airairhp"
+    }, {
+        "name": "target_temperature_less",
+        "type": "range",
+        "min": 10,
+        "max": 32,
+		"step": 1,
+		"label": "°C",
+		"labelMultiplier": 1,
+		"labelDecimals": 0,
+        "title": {
+            "en": "Less than",
+            "nl": "Minder dan"
+        }
+    }]
+}
