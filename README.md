@@ -247,4 +247,4 @@ If you like the app, consider buying me a cup of coffee!
 - 31-MAR-21: Bug fixes; homekit driver missing some flow cards
 - 24-JUN-21: Update Daikin Controller node module.
 - 03-JUL-21: Fixed a bug related to SpecialModes.
-
+- 10-AUG-21: Fixed a bug related to the special mode STREAMER.
