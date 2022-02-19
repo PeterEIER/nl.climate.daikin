@@ -1,0 +1,15 @@
+support
+test
+examples
+example
+*.sock
+dist
+yarn.lock
+coverage
+bower.json
+.coveralls.yml
+.eslintrc
+.travis.yml
+.npmignore
+karma.conf.js
+Makefile

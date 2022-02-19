@@ -83,5 +83,9 @@
   },
   "5.1.10": {
     "en": "Fixed a bug related to the special mode STREAMER."
+  },
+  "5.1.11": {
+    "en": "Fixed a bug related to a missinng trigger card."
   }
 }
+

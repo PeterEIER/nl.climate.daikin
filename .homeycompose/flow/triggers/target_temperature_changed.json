@@ -7,6 +7,6 @@
 	"args": [{
 		"name": "device",
 		"type": "device",
-		"filter": "driver_id=airairhphk"
+		"filter": "driver_id=airairhp|airairhphk"
 	}]
 }

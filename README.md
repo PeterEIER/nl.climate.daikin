@@ -1,4 +1,4 @@
-![Daikin logo](https://github.com/PeterEIER/nl.climate.daikin/raw/main/assets/images/Daikin-logo-wide.png)
+![Daikin logo](https://github.com/PeterEIER/nl.climate.daikin/raw/master/assets/images/Daikin-logo-wide.png)
 
 # Daikin AI for Homey
 Control your Daikin air conditioner through Homey. This app requires that your Daikin air conditioner is equipped with a WiFi adapter (either model BRP069A-- or BRP069B–). This app does NOT support “Sky Air” ducted/ceiling models, models that are/can only be controlled by Daikin’s Residential Controller app (which was introduced in January of 2021) and/or models equipped with a C type (i.e. BRP069C4x) WiFi adapter.
@@ -248,3 +248,4 @@ If you like the app, consider buying me a cup of coffee!
 - 24-JUN-21: Update Daikin Controller node module.
 - 03-JUL-21: Fixed a bug related to SpecialModes.
 - 10-AUG-21: Fixed a bug related to the special mode STREAMER.
+- 13-JAN-22: Fixed a bug (missing trigger card for model HP)
