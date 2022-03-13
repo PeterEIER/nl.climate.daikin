@@ -49,6 +49,8 @@
 		"large": "/drivers/airairhp/assets/images/large.png",
 		"small": "/drivers/airairhp/assets/images/small.png"
 	},
+	"platforms": ["local"],
+	"connectivity": ["lan"],
 	"pair": [{
 		"id": "start"
 	}],

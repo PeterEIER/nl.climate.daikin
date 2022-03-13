@@ -12,7 +12,7 @@
   "category": [
     "climate"
   ],
-  "version": "5.1.11",
+  "version": "5.1.12",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
@@ -1820,6 +1820,12 @@
         "large": "/drivers/airairhp/assets/images/large.png",
         "small": "/drivers/airairhp/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "pair": [
         {
           "id": "start"
@@ -1957,6 +1963,12 @@
         "large": "/drivers/airairhphk/assets/images/large.png",
         "small": "/drivers/airairhphk/assets/images/small.png"
       },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "pair": [
         {
           "id": "start"

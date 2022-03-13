@@ -13,6 +13,8 @@
         "large": "/drivers/airairhphk/assets/images/large.png",
         "small": "/drivers/airairhphk/assets/images/small.png"
     },
+	"platforms": ["local"],
+	"connectivity": ["lan"],
     "pair": [{
         "id": "start"
     }],

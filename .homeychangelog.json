@@ -86,6 +86,8 @@
   },
   "5.1.11": {
     "en": "Fixed a bug related to a missinng trigger card."
+  },
+  "5.1.12": {
+    "en": "Changes in support of the new Homey App Store. "
   }
 }
-
