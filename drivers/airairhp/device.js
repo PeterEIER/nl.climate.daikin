@@ -349,9 +349,12 @@ class AirAirHPDevice extends Device {
 			const state = {
 				'target_humidity': ahum
 			};
-			this._triggerTargetHumidityMoreThan.trigger(device, tokens, state);
-			this._triggerTargetHumidityLessThan.trigger(device, tokens, state);
-			this._triggerTargetHumidityBetween.trigger(device, tokens, state);
+			this._triggerTargetHumidityMoreThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerTargetHumidityLessThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerTargetHumidityBetween.trigger(device, tokens, state)
+				.catch(this.error);
 
 			// update the airco its settings
 			this.daikinHumControl(ahum);
@@ -381,9 +384,12 @@ class AirAirHPDevice extends Device {
 			const state = {
 				target_temperature: atemp
 			};
-			this._triggerTargetTemperatureMoreThan.trigger(device, tokens, state);
-			this._triggerTargetTemperatureLessThan.trigger(device, tokens, state);
-			this._triggerTargetTemperatureBetween.trigger(device, tokens, state);
+			this._triggerTargetTemperatureMoreThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerTargetTemperatureLessThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerTargetTemperatureBetween.trigger(device, tokens, state)
+				.catch(this.error);
 
 			// update the airco its settings
 			this.daikinTempControl(atemp);
@@ -512,7 +518,8 @@ class AirAirHPDevice extends Device {
 			const state = {
 				capability_mode
 			};
-			this._triggerAircoMode.trigger(device, tokens, state);
+			this._triggerAircoMode.trigger(device, tokens, state)
+				.catch(this.error);
 		}
 
 		// ---- special modes - check if any has been turned on...
@@ -768,9 +775,12 @@ class AirAirHPDevice extends Device {
 			const state = {
 				'measure_temperature.inside': inside
 			};
-			this._triggerInsideTemperatureMoreThan.trigger(device, tokens, state);
-			this._triggerInsideTemperatureLessThan.trigger(device, tokens, state);
-			this._triggerInsideTemperatureBetween.trigger(device, tokens, state);
+			this._triggerInsideTemperatureMoreThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerInsideTemperatureLessThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerInsideTemperatureBetween.trigger(device, tokens, state)
+				.catch(this.error);
 		}
 
 		// --- Outside
@@ -787,9 +797,12 @@ class AirAirHPDevice extends Device {
 			const state = {
 				'measure_temperature.outside': outside
 			};
-			this._triggerOutsideTemperatureMoreThan.trigger(device, tokens, state);
-			this._triggerOutsideTemperatureLessThan.trigger(device, tokens, state);
-			this._triggerOutsideTemperatureBetween.trigger(device, tokens, state);
+			this._triggerOutsideTemperatureMoreThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerOutsideTemperatureLessThan.trigger(device, tokens, state)
+				.catch(this.error);
+			this._triggerOutsideTemperatureBetween.trigger(device, tokens, state)
+				.catch(this.error);
 		}
 
 		return Promise.resolve();

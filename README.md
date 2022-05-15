@@ -250,3 +250,4 @@ If you like the app, consider buying me a cup of coffee!
 - 10-AUG-21: Fixed a bug related to the special mode STREAMER
 - 13-JAN-22: Fixed a bug (missing trigger card for model HP)
 - 13-MAR-22: SDK updated, new features added by Athom update app & drive json files accordingly
+- 13-MAY-22: Catch error to prevent the app from crashing (NodeJS v16 update)
