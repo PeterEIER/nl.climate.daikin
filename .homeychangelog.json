@@ -85,9 +85,15 @@
     "en": "Fixed a bug related to the special mode STREAMER."
   },
   "5.1.11": {
-    "en": "Fixed a bug related to a missinng trigger card."
+    "en": "Fixed a bug related to a missing trigger card."
   },
   "5.1.12": {
     "en": "Changes in support of the new Homey App Store. "
+  },
+  "5.1.13": {
+    "en": "Code changes in suppport of Homey firmware 7.4.1."
+  },
+  "5.1.14": {
+    "en": "1/ Code changes in suppport of Homey firmware 7.4.1. 2/ Homey app store description updates."
   }
 }

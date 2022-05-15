@@ -11,7 +11,7 @@
 	"category": [
 		"climate"
 	],
-	"version": "5.1.13",
+	"version": "5.1.14",
 	"compatibility": ">=5.0.0",
 	"platforms": ["local"],
 	"sdk": 3,
