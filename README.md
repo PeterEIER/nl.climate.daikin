@@ -251,3 +251,4 @@ If you like the app, consider buying me a cup of coffee!
 - 13-JAN-22: Fixed a bug (missing trigger card for model HP)
 - 13-MAR-22: SDK updated, new features added by Athom update app & drive json files accordingly
 - 13-MAY-22: Code changes in support of Homey firmeware 7.4.1
+- 13-JUL-22: Removed re-pair functionality (no longer needed). Added "hasCapability" check to prevent NodeJS 16 error reports. 

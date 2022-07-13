@@ -1,12 +1,12 @@
 {
     "id": "change_target_temperature_less_than",
     "title": {
-        "en": "The target temperature is less than",
-        "nl": "De ingestelde temperatuur is minder dan"
+        "en": "Target temperature is less than",
+        "nl": "Ingestelde temperatuur is minder dan"
     },
     "titleFormatted": {
-        "en": "The target temperature is less than [[target_temperature_less]]",
-        "nl": "De ingestelde temperatuur is minder dan [[target_temperature_less]]"
+        "en": "Target temperature is less than [[target_temperature_less]]",
+        "nl": "Ingestelde temperatuur is minder dan [[target_temperature_less]]"
     },
     "args": [{
         "name": "device",

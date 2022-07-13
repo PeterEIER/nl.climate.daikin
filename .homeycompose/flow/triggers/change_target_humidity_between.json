@@ -1,12 +1,12 @@
 {
     "id": "change_target_humidity_between",
     "title": {
-        "en": "The target humidity is between",
-        "nl": "De ingestelde luchtvochtigheid is tussen"
+        "en": "Target humidity is between",
+        "nl": "Ingestelde luchtvochtigheid is tussen"
     },
     "titleFormatted": {
-        "en": "The target humidity is between [[target_humidity_from]] and [[target_humidity_to]]",
-        "nl": "De ingestelde luchtvochtigheid is tussen [[target_humidity_from]] en [[target_humidity_to]]"
+        "en": "Target humidity is between [[target_humidity_from]] and [[target_humidity_to]]",
+        "nl": "Ingestelde luchtvochtigheid is tussen [[target_humidity_from]] en [[target_humidity_to]]"
     },
     "args": [{
         "name": "device",

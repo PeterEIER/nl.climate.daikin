@@ -1,12 +1,12 @@
 {
     "id": "mode_econo_equals",
     "title": {
-        "en": "The econo mode !{{equals|does not equal}}",
-        "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}}"
+        "en": "Econo mode !{{equals|does not equal}}",
+        "nl": "Bespaarmodus !{{komt overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "The econo mode !{{equals|does not equal}} [[smode_econo]]",
-        "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}} [[smode_econo]]"
+        "en": "Econo mode !{{equals|does not equal}} [[smode_econo]]",
+        "nl": "Bespaarmodus !{{komt overeen met|komt niet overeen met}} [[smode_econo]]"
     },
     "args": [{
         "type": "device",

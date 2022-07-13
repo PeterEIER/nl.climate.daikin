@@ -1,12 +1,12 @@
 {
     "id": "change_target_humidity_more_than",
     "title": {
-        "en": "The target humidity is more than",
-        "nl": "De ingestelde luchtvochtigheid is meer dan"
+        "en": "Target humidity is more than",
+        "nl": "Ingestelde luchtvochtigheid is meer dan"
     },
     "titleFormatted": {
-        "en": "The target humidity is more than [[target_humidity_more]]",
-        "nl": "De ingestelde luchtvochtigheid is meer dan [[target_humidity_more]]"
+        "en": "Target humidity is more than [[target_humidity_more]]",
+        "nl": "Ingestelde luchtvochtigheid is meer dan [[target_humidity_more]]"
     },
     "args": [{
         "name": "device",

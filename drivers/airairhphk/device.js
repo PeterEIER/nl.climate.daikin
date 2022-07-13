@@ -23,8 +23,10 @@ class AirAirHPHKDevice extends Device {
     // for documentation about the Daikin API look at https://github.com/Apollon77/daikin-controller and at
     // https://github.com/Apollon77/daikin-controller
 
-    this.setCapabilityValue('thermostat_mode', 'off')
+    if (this.hasCapability('thermostat_mode') ) {
+		this.setCapabilityValue('thermostat_mode', 'off')
 		.catch(this.error); // ensure a valid mode is shown at start up...
+	}
 
     this.AirAirHPHKIsDeleted = false;
     this.refreshData(); // refresh every x-seconds the Homey app with data retrieved from the airco...
@@ -55,8 +57,10 @@ class AirAirHPHKDevice extends Device {
     this.log('>>>onCapabilityMode');
     this.log('mode:', thermostat_mode);
 
-    this.setCapabilityValue('thermostat_mode', thermostat_mode)
+    if (this.hasCapability('thermostat_mode') ) {
+		this.setCapabilityValue('thermostat_mode', thermostat_mode)
 		.catch(this.error);
+	}
 
     this.daikinModeControl(thermostat_mode);
 
@@ -78,8 +82,10 @@ class AirAirHPHKDevice extends Device {
 
     if (oldTargetTemperature !== atemp) {
       this.log('new target airco temperature °C:', atemp);
-      this.setCapabilityValue('target_temperature', atemp)
-	  	.catch(this.error);
+      if (this.hasCapability('target_temperature') ) {
+		  this.setCapabilityValue('target_temperature', atemp)
+		  .catch(this.error);
+	  }
 
       const tokens = {
         temperature_set: atemp,
@@ -175,21 +181,35 @@ class AirAirHPHKDevice extends Device {
     this.log('mode:', thermostat_mode);
     this.log('capability_mode:', capability_mode);
     // when the airco is tured off using Daikin AI show mode "OFF" and keep showing that mode
-    if ((capability_mode !== 'off')) this.setCapabilityValue('thermostat_mode', thermostat_mode)
-		.catch(this.error);
+    if ((capability_mode !== 'off')) {
+		if (this.hasCapability('thermostat_mode') ) {
+			this.setCapabilityValue('thermostat_mode', thermostat_mode)
+			.catch(this.error);
+		}
+	}
     // but when the airco is powered on externally make sure that capability mode "OFF" is cleared by
     // setting it to "auto" which will be overruled by the correct airco mode the next refreshData loop
-    if ((apow === 1) && (capability_mode === 'off')) this.setCapabilityValue('thermostat_mode', 'auto')
-		.catch(this.error);
-    // when the airo is powered off externally make sure that capability mode "OFF" is set
-    if ((apow === 0) && (capability_mode !== 'off')) this.setCapabilityValue('thermostat_mode', 'off')
-		.catch(this.error);
+    if ((apow === 1) && (capability_mode === 'off')) {
+		if (this.hasCapability('thermostat_mode') ) {
+			this.setCapabilityValue('thermostat_mode', 'auto')
+			.catch(this.error);
+    	}
+	}
+	// when the airo is powered off externally make sure that capability mode "OFF" is set
+    if ((apow === 0) && (capability_mode !== 'off')) {
+		if (this.hasCapability('thermostat_mode') ) {
+			this.setCapabilityValue('thermostat_mode', 'off')
+			.catch(this.error);
+		}
+	}
 
     // ---- temperature
     const atemp = Number(control_info[4]);
     this.log('target temperature °C:', atemp);
-    this.setCapabilityValue('target_temperature', atemp)
+    if (this.hasCapability('target_temperature') ) {
+		this.setCapabilityValue('target_temperature', atemp)
 		.catch(this.error);
+	}
 
     return Promise.resolve();
   }
@@ -211,9 +231,11 @@ class AirAirHPHKDevice extends Device {
 
 	// ---- update temperature readings
     const inside = parseFloat(sensor_info[1]); //was >> Number(sensor_info[1]); // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
-    this.setCapabilityValue('measure_temperature', inside)
+    if (this.hasCapability('measure_temperature') ) {
+		this.setCapabilityValue('measure_temperature', inside)
 		.catch(this.error);
-    this.log('Temp inside:', inside);
+    }
+	this.log('Temp inside:', inside);
 
     return Promise.resolve();
   }

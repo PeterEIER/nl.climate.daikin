@@ -1,9 +1,13 @@
 {
 	"id": "temperature_changed",
 	"title": {
-		"en": "The (inside) temperature has changed",
-		"nl": "De (binnen) temperatuur is veranderd"
+		"en": "Inside temperature has changed",
+		"nl": "Binnentemperatuur is veranderd"
 	},
+    "titleFormatted": {
+		"en": "Inside temperature has changed",
+		"nl": "Binnentemperatuur is veranderd"
+    },
 	"args": [{
 		"name": "device",
 		"type": "device",

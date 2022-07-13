@@ -44,96 +44,136 @@ class AirAirHPDevice extends Device {
 		switch (spmode_config) {
 			case 0:
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				break;
 			case 1:
 				if (this.hasCapability('thermostat_mode_ext1')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_eco', this.onCapabilitySpecialModeEco.bind(this));
-				this.setCapabilityValue('special_mode_eco', 'off')
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				break;
 			case 2:
 				if (this.hasCapability('thermostat_mode_ext2')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_pwr', this.onCapabilitySpecialModePwr.bind(this));
-				this.setCapabilityValue('special_mode_pwr', 'off')
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				break;
 			case 3:
 				if (this.hasCapability('thermostat_mode_ext3')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...  
+				}
 				this.registerCapabilityListener('special_mode_eco', this.onCapabilitySpecialModeEco.bind(this));
-				this.setCapabilityValue('special_mode_eco', 'off')
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_pwr', this.onCapabilitySpecialModePwr.bind(this));
-				this.setCapabilityValue('special_mode_pwr', 'off')
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				break;
 			case 4:
 				if (this.hasCapability('thermostat_mode_ext4')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_str', this.onCapabilitySpecialModeStr.bind(this));
-				this.setCapabilityValue('special_mode_str', 'off')
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 5:
 				if (this.hasCapability('thermostat_mode_ext5')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_eco', this.onCapabilitySpecialModeEco.bind(this));
-				this.setCapabilityValue('special_mode_eco', 'off')
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_str', this.onCapabilitySpecialModeStr.bind(this));
-				this.setCapabilityValue('special_mode_str', 'off')
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 6:
 				if (this.hasCapability('thermostat_mode_ext6')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_pwr', this.onCapabilitySpecialModePwr.bind(this));
-				this.setCapabilityValue('special_mode_pwr', 'off')
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_str', this.onCapabilitySpecialModeStr.bind(this));
-				this.setCapabilityValue('special_mode_str', 'off')
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			case 7:
 				if (this.hasCapability('thermostat_mode_ext7')) this.setWarning('Complete the driver upgrade.');
 				else this.setWarning(null);
 				this.registerCapabilityListener('thermostat_mode_std', this.onCapabilityMode.bind(this));
-				this.setCapabilityValue('thermostat_mode_std', 'off')
+				if (this.hasCapability('thermostat_mode_std') ) {
+					this.setCapabilityValue('thermostat_mode_std', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_eco', this.onCapabilitySpecialModeEco.bind(this));
-				this.setCapabilityValue('special_mode_eco', 'off')
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_pwr', this.onCapabilitySpecialModePwr.bind(this));
-				this.setCapabilityValue('special_mode_pwr', 'off')
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('special_mode_str', this.onCapabilitySpecialModeStr.bind(this));
-				this.setCapabilityValue('special_mode_str', 'off')
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', 'off')
 					.catch(this.error); // ensure a valid mode is shown at start up...
+				}
 				this.registerCapabilityListener('target_humidity', this.onCapabilityAircoHum.bind(this));
 				break;
 			default:
@@ -184,8 +224,10 @@ class AirAirHPDevice extends Device {
 		this.log('>>>onCapabilityMode');
 		this.log('Set Daikin AI airco mode to:', acmode);
 
-		this.setCapabilityValue('thermostat_mode_std', acmode)
+		if (this.hasCapability('thermostat_mode_std') ) {
+			this.setCapabilityValue('thermostat_mode_std', acmode)
 			.catch(this.error);
+		}
 
 		this.daikinModeControl(acmode);
 
@@ -212,8 +254,10 @@ class AirAirHPDevice extends Device {
 			useGetToPost: false
 		};
 
-		this.setCapabilityValue('special_mode_eco', special_mode_eco)
+		if (this.hasCapability('special_mode_eco') ) {
+			this.setCapabilityValue('special_mode_eco', special_mode_eco)
 			.catch(this.error);
+		}
 
 		if (special_mode_eco === "on") {
 			var advstate = 1;
@@ -248,8 +292,10 @@ class AirAirHPDevice extends Device {
 			useGetToPost: false
 		};
 
-		this.setCapabilityValue('special_mode_pwr', special_mode_pwr)
+		if (this.hasCapability('special_mode_pwr') ) {
+			this.setCapabilityValue('special_mode_pwr', special_mode_pwr)
 			.catch(this.error);
+		}
 
 		if (special_mode_pwr === "on") {
 			var advstate = 1;
@@ -285,8 +331,10 @@ class AirAirHPDevice extends Device {
 			useGetToPost: false
 		};
 
-		this.setCapabilityValue('special_mode_str', special_mode_str)
+		if (this.hasCapability('special_mode_str') ) {
+			this.setCapabilityValue('special_mode_str', special_mode_str)
 			.catch(this.error);
+		}
 
 		if (special_mode_str === "on") {
 			util.daikinModeControl("off", ip, options, demo_mode); // turn airco off - streamer mode can only be activated when the airco is off
@@ -307,8 +355,10 @@ class AirAirHPDevice extends Device {
 		this.log('>>>onCapabilityFanRate');
 
 		this.log('fan rate:', fan_rate);
-		this.setCapabilityValue('fan_rate', fan_rate)
+		if (this.hasCapability('fan_rate') ) {
+			this.setCapabilityValue('fan_rate', fan_rate)
 			.catch(this.error);
+		}
 
 		this.daikinFanRateControl(fan_rate);
 
@@ -320,8 +370,10 @@ class AirAirHPDevice extends Device {
 		this.log('>>>onCapabilityFanDir');
 
 		this.log('fan direction:', fan_direction);
-		this.setCapabilityValue('fan_direction', fan_direction)
+		if (this.hasCapability('fan_direction') ) {
+			this.setCapabilityValue('fan_direction', fan_direction)
 			.catch(this.error);
+		}
 
 		this.daikinFanDirControl(fan_direction);
 
@@ -338,8 +390,10 @@ class AirAirHPDevice extends Device {
 		// --- Flowcards logic for humidity triggering
 		if (oldahum !== ahum) {
 			this.log('New target humidity:', ahum);
-			this.setCapabilityValue('target_humidity', ahum)
+			if (this.hasCapability('target_humidity') ) {
+				this.setCapabilityValue('target_humidity', ahum)
 				.catch(this.error);
+			}
 
 			// trigger action flows as necessary (see driver.js)
 			const device = this;
@@ -373,8 +427,10 @@ class AirAirHPDevice extends Device {
 		// --- Flowcards logic for target temp triggering
 		if (oldTargetTemperature !== atemp) {
 			this.log('New target airco temperature °C:', atemp);
-			this.setCapabilityValue('target_temperature', atemp)
+			if (this.hasCapability('target_temperature') ) {
+				this.setCapabilityValue('target_temperature', atemp)
 				.catch(this.error);
+			}
 
 			// trigger action flows as necessary (see driver.js)
 			const device = this;
@@ -484,15 +540,26 @@ class AirAirHPDevice extends Device {
 		var capability_mode = this.getCapabilityValue('thermostat_mode_std');
 
 		// when the airco is tured off then Daikin AI should show mode "OFF" and keep showing that mode iso the airco mode
-		if ((capability_mode !== 'off')) this.setCapabilityValue('thermostat_mode_std', thermostat_mode)
-			.catch(this.error);
+		if ((capability_mode !== 'off')) {
+			if (this.hasCapability('thermostat_mode_std') ) {
+				this.setCapabilityValue('thermostat_mode_std', thermostat_mode)
+				.catch(this.error);
+			}
+		}
 		// when the airco is powered on externally make sure that capability mode "OFF" is cleared by
-		if ((apow === 1) && (capability_mode === 'off')) this.setCapabilityValue('thermostat_mode_std', thermostat_mode)
-			.catch(this.error);
+		if ((apow === 1) && (capability_mode === 'off')) {
+			if (this.hasCapability('thermostat_mode_std') ) {
+				this.setCapabilityValue('thermostat_mode_std', thermostat_mode)
+				.catch(this.error);
+			}
+		}
 		// when the airo is powered off externally make sure that capability mode "OFF" is set
-		if ((apow === 0) && (capability_mode !== 'off')) this.setCapabilityValue('thermostat_mode_std', 'off')
-			.catch(this.error);
-
+		if ((apow === 0) && (capability_mode !== 'off')) {
+			if (this.hasCapability('thermostat_mode_std') ) {
+				this.setCapabilityValue('thermostat_mode_std', 'off')
+				.catch(this.error);
+			}
+		}
 		this.setSettings({
 				capability_mode
 			})
@@ -531,8 +598,10 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 1) || (spmode === 3) || (spmode === 5) || (spmode === 7)) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
 			if (specialModeResponse === '12') {
-				this.setCapabilityValue('special_mode_eco', "on")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "on")
 					.catch(this.error);
+				}
 				this.log('Special Mode: Econo turned ON');
 			}
 		}
@@ -540,8 +609,10 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 2) || (spmode === 3) || (spmode === 6) || (spmode === 7)) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
 			if (specialModeResponse === '2') {
-				this.setCapabilityValue('special_mode_pwr', "on")
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "on")
 					.catch(this.error);
+				}
 				this.log('Special Mode: Poweful turned ON');
 			}
 		}
@@ -549,8 +620,10 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 4) || (spmode === 5) || (spmode === 6) || (spmode === 7)) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
 			if (specialModeResponse === '13') {
-				this.setCapabilityValue('special_mode_str', "on")
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "on")
 					.catch(this.error);
+				}
 				this.log('Special Mode: Streamer turned ON');
 			}
 		}
@@ -558,10 +631,14 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 5) || (spmode === 7)) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
 			if (specialModeResponse === '12/13') {
-				this.setCapabilityValue('special_mode_eco', "on")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "on")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_str', "on")
+				}
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "on")
 					.catch(this.error);
+				}
 				this.log('Special Combi Mode: Econo+Streamer turned ON');
 			}
 		}
@@ -569,10 +646,14 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 6) || (spmode === 7)) {
 			const specialModeResponse = String(control_info[3]); // '' = n/a, 2 = powerful, 12 = econo, 13 = streamer, powerful/streamer = 2/13, econo/streamer = 12/13
 			if (specialModeResponse === '2/13') {
-				this.setCapabilityValue('special_mode_pwr', "on")
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "on")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_str', "on")
+				}
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "on")
 					.catch(this.error);
+				}
 				this.log('Special Combi Mode: Powerfull+Streamer turned ON');
 			}
 		}
@@ -582,8 +663,10 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_eco', "off")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -591,8 +674,10 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_pwr', "off")
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -600,10 +685,14 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_eco', "off")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_pwr', "off")
+				}
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -611,8 +700,10 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_str', "off")
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -620,10 +711,14 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_eco', "off")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "off") 
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_str', "off")
+				}
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -631,10 +726,14 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_pwr', "off")
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_str', "off")
+				}
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -642,12 +741,18 @@ class AirAirHPDevice extends Device {
 			const specialModeResponse = String(control_info[3]); // '' = n/a
 			//this.log('specialModeResponse: adv=', specialModeResponse);
 			if (specialModeResponse === '') {
-				this.setCapabilityValue('special_mode_eco', "off")
+				if (this.hasCapability('special_mode_eco') ) {
+					this.setCapabilityValue('special_mode_eco', "off")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_pwr', "off")
+				}
+				if (this.hasCapability('special_mode_pwr') ) {
+					this.setCapabilityValue('special_mode_pwr', "off")
 					.catch(this.error);
-				this.setCapabilityValue('special_mode_str', "off")
+				}
+				if (this.hasCapability('special_mode_str') ) {
+					this.setCapabilityValue('special_mode_str', "off")
 					.catch(this.error);
+				}
 				this.log('Special Modes: All special modes turned OFF');
 			}
 		}
@@ -655,20 +760,26 @@ class AirAirHPDevice extends Device {
 		// ---- temperature
 		const atemp = Number(control_info[4]);
 		this.log('target temperature °C:', atemp);
-		this.setCapabilityValue('target_temperature', atemp)
+		if (this.hasCapability('target_temperature') ) {
+			this.setCapabilityValue('target_temperature', atemp)
 			.catch(this.error);
+		}
 
 		// turn thermostat ui component black when AC is turned off (note: a custom airco_mode capability and the thermostat ui component do not work properly together...)
 		const tiletemp = settings.tiletemp;
 		if ((capability_mode === 'off') && (tiletemp === 'target')) {
 			const target_temp = this.getCapabilityValue('target_temperature');
-			this.setCapabilityValue('measure_temperature', target_temp)
+			if (this.hasCapability('measure_temperature') ) {
+				this.setCapabilityValue('measure_temperature', target_temp)
 				.catch(this.error); // used by the Homey thermostat
+			}
 		}
 		if ((capability_mode === 'off') && (tiletemp === 'inside')) {
 			const inside_temp = this.getCapabilityValue('measure_temperature.inside');
-			this.setCapabilityValue('target_temperature', inside_temp)
+			if (this.hasCapability('target_temperature') ) {
+				this.setCapabilityValue('target_temperature', inside_temp)
 				.catch(this.error); // used by the Homey thermostat
+			}
 			// update the airco its settings as necessary
 			const target_temp = this.getCapabilityValue('target_temperature');
 			if (target_temp !== inside_temp) {
@@ -680,8 +791,10 @@ class AirAirHPDevice extends Device {
 		if ((spmode === 4) || (spmode === 5) || (spmode === 6) || (spmode === 7)) {
 			const ahum = Number(control_info[5]);
 			this.log('Target humidity: ', ahum);
-			this.setCapabilityValue('target_humidity', ahum)
+			if (this.hasCapability('target_humidity') ) {
+				this.setCapabilityValue('target_humidity', ahum)
 				.catch(this.error);
+			}
 		}
 
 		// ---- fan rate
@@ -698,16 +811,20 @@ class AirAirHPDevice extends Device {
 			frate_nbr = parseInt(frate - 1);
 		}
 		const fan_rate = fan_rates[frate_nbr]; // fan_rate = 'auto','quiet','level1','level2',etc.
-		this.setCapabilityValue('fan_rate', fan_rate)
+		if (this.hasCapability('fan_rate') ) {
+			this.setCapabilityValue('fan_rate', fan_rate)
 			.catch(this.error);
+		}
 		this.log('frate:', fan_rate);
 
 		// ---- fan direction
 		const fan_directions = ['stop', 'vertical', 'horizontal', '3d'];
 		const fdir = Number(control_info[24]); // control_info[24] = '0,'1','2','3'
 		const fan_direction = fan_directions[fdir]; // fan_direction = 'stop','vertical,'horizontal,'3d'
-		this.setCapabilityValue('fan_direction', fan_direction)
+		if (this.hasCapability('fan_direction') ) {
+			this.setCapabilityValue('fan_direction', fan_direction)
 			.catch(this.error);
+		}
 		this.log('fdir:', fan_direction);
 
 		return Promise.resolve();
@@ -741,14 +858,20 @@ class AirAirHPDevice extends Device {
 		const outside = parseFloat(sensor_info[3]); //was >> Number(sensor_info[3]);  // Note that parseFloat >> 10.0 = 10, 10.45 = 10.45!!
 		var capability_mode = this.getCapabilityValue('thermostat_mode_std');
 		if ((capability_mode !== 'off') || ((capability_mode === 'off') && (tiletemp === 'inside'))) {
-			this.setCapabilityValue('measure_temperature', inside)
+			if (this.hasCapability('measure_temperature') ) {
+				this.setCapabilityValue('measure_temperature', inside)
 				.catch(this.error); // used by the Homey thermostat, updates only when the airco is turned on
+			}
 		}
-		this.setCapabilityValue('measure_temperature.inside', inside)
+		if (this.hasCapability('measure_temperature.inside') ) {
+			this.setCapabilityValue('measure_temperature.inside', inside)
 			.catch(this.error);
+		}
 		this.log('Temp inside:', inside);
-		this.setCapabilityValue('measure_temperature.outside', outside)
+		if (this.hasCapability('measure_temperature.outside') ) {
+			this.setCapabilityValue('measure_temperature.outside', outside)
 			.catch(this.error);
+		}
 		this.log('Temp outside:', outside);
 
 		// --- Flowcards logic for inside and outside temperature triggering
@@ -764,8 +887,10 @@ class AirAirHPDevice extends Device {
 		// --- Inside
 		if (oldInsideTemperature !== inside) {
 			this.log('New inside airco temperature °C:', inside);
-			this.setCapabilityValue('measure_temperature.inside', inside)
+			if (this.hasCapability('measure_temperature.inside') ) {
+				this.setCapabilityValue('measure_temperature.inside', inside)
 				.catch(this.error);
+			}
 
 			// trigger action flows as necessary (see driver.js)
 			const device = this;
@@ -786,8 +911,10 @@ class AirAirHPDevice extends Device {
 		// --- Outside
 		if (oldOutsideTemperature !== outside) {
 			this.log('New outside airco temperature °C:', outside);
-			this.setCapabilityValue('measure_temperature.outside', outside)
+			if (this.hasCapability('measure_temperature.outside') ) {
+				this.setCapabilityValue('measure_temperature.outside', outside)
 				.catch(this.error);
+			}
 
 			// trigger action flows as necessary (see driver.js)
 			const device = this;

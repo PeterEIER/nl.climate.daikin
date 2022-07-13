@@ -1,12 +1,12 @@
 {
     "id": "has_outside_temperature_between",
     "title": {
-        "en": "The outside temperature !{{is|isn't}} between",
-        "nl": "De buitentemperatuur !{{is|is niet}} tussen"
+        "en": "Outside temperature !{{is|isn't}} between",
+        "nl": "Buitentemperatuur !{{is|is niet}} tussen"
     },
     "titleFormatted": {
-        "en": "The outside temperature !{{is|isn't}} between [[outside_temperature_from]] and [[outside_temperature_to]]",
-        "nl": "De buitentemperatuur !{{is|is niet}} tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
+        "en": "Outside temperature !{{is|isn't}} between [[outside_temperature_from]] and [[outside_temperature_to]]",
+        "nl": "Buitentemperatuur !{{is|is niet}} tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
     },
     "args": [{
         "name": "device",

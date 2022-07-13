@@ -1,12 +1,12 @@
 {
     "id": "has_outside_temperature_more_than",
     "title": {
-        "en": "The outside temperature !{{is|isn't}} more than",
-        "nl": "De buitentemperatuur !{{is|is niet}} meer dan"
+        "en": "Outside temperature !{{is|isn't}} more than",
+        "nl": "Buitentemperatuur !{{is|is niet}} meer dan"
     },
     "titleFormatted": {
-        "en": "The outside temperature !{{is|isn't}} more than [[outside_temperature_more]]",
-        "nl": "De buitentemperatuur !{{is|is niet}} meer dan [[outside_temperature_more]]"
+        "en": "Outside temperature !{{is|isn't}} more than [[outside_temperature_more]]",
+        "nl": "Buitentemperatuur !{{is|is niet}} meer dan [[outside_temperature_more]]"
     },
     "args": [{
         "name": "device",

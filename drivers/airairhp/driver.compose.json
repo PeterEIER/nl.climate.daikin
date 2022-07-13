@@ -54,12 +54,6 @@
 	"pair": [{
 		"id": "start"
 	}],
-	"repair": [{
-		"id": "startrepair"
-	}, {
-		"id": "finish",
-		"template": "done"
-	}],
 	"settings": [{
 		"type": "group",
 		"label": {

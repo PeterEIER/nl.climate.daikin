@@ -1,12 +1,12 @@
 {
     "id": "has_inside_temperature_less_than",
     "title": {
-        "en": "The inside temperature !{{is|isn't}} less than",
-        "nl": "De binnentemperatuur !{{is|is niet}} minder dan"
+        "en": "Inside temperature !{{is|isn't}} less than",
+        "nl": "Binnentemperatuur !{{is|is niet}} minder dan"
     },
     "titleFormatted": {
-        "en": "The inside temperature !{{is|isn't}} less than [[inside_temperature_less]]",
-        "nl": "De binnentemperatuur !{{is|is niet}} minder dan [[inside_temperature_less]]"
+        "en": "Inside temperature !{{is|isn't}} less than [[inside_temperature_less]]",
+        "nl": "Binnentemperatuur !{{is|is niet}} minder dan [[inside_temperature_less]]"
     },
     "args": [{
         "name": "device",

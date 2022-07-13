@@ -1,12 +1,12 @@
 {
     "id": "change_target_humidity_less_than",
     "title": {
-        "en": "The target humidity is less than",
-        "nl": "De ingestelde luchtvochtigheid is minder dan"
+        "en": "Target humidity is less than",
+        "nl": "Ingestelde luchtvochtigheid is minder dan"
     },
     "titleFormatted": {
-        "en": "The target humidity is less than [[target_humidity_less]]",
-        "nl": "De ingestelde luchtvochtigheid is minder dan [[target_humidity_less]]"
+        "en": "Target humidity is less than [[target_humidity_less]]",
+        "nl": "Ingestelde luchtvochtigheid is minder dan [[target_humidity_less]]"
     },
     "args": [{
         "name": "device",

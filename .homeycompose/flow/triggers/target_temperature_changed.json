@@ -1,9 +1,13 @@
 {
 	"id": "target_temperature_changed",
 	"title": {
-		"en": "The target temperature has changed",
-		"nl": "De ingestelde temperatuur is veranderd"
+		"en": "Target temperature has changed",
+		"nl": "Ingestelde temperatuur is veranderd"
 	},
+    "titleFormatted": {
+		"en": "Target temperature has changed",
+		"nl": "Ingestelde temperatuur is veranderd"
+    },
 	"args": [{
 		"name": "device",
 		"type": "device",
