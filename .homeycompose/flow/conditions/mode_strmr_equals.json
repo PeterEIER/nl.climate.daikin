@@ -1,12 +1,12 @@
 {
     "id": "mode_strmr_equals",
     "title": {
-        "en": "The streamer mode !{{equals|does not equal}}",
-        "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}}"
+        "en": "Streamer mode !{{equals|does not equal}}",
+        "nl": "Streamer modus !{{komt overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "The streamer mode !{{equals|does not equal}} [[smode_strmr]]",
-        "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}} [[smode_strmr]]"
+        "en": "Streamer mode !{{equals|does not equal}} [[smode_strmr]]",
+        "nl": "Streamer modus !{{komt overeen met|komt niet overeen met}} [[smode_strmr]]"
     },
     "args": [{
         "type": "device",

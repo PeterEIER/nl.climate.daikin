@@ -1,12 +1,12 @@
 {
     "id": "has_target_humidity_less_than",
     "title": {
-        "en": "The target humidity !{{is|isn't}} less than",
-        "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} minder dan"
+        "en": "Target humidity !{{is|isn't}} less than",
+        "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} minder dan"
     },
     "titleFormatted": {
-        "en": "The target humidity !{{is|isn't}} less than [[target_humidity_less]]",
-        "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} minder dan [[target_humidity_less]]"
+        "en": "Target humidity !{{is|isn't}} less than [[target_humidity_less]]",
+        "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} minder dan [[target_humidity_less]]"
     },
     "args": [{
         "name": "device",

@@ -12,7 +12,7 @@
   "category": [
     "climate"
   ],
-  "version": "5.1.14",
+  "version": "5.3.2",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
@@ -73,12 +73,12 @@
       {
         "id": "change_target_humidity_between",
         "title": {
-          "en": "The target humidity is between",
-          "nl": "De ingestelde luchtvochtigheid is tussen"
+          "en": "Target humidity is between",
+          "nl": "Ingestelde luchtvochtigheid is tussen"
         },
         "titleFormatted": {
-          "en": "The target humidity is between [[target_humidity_from]] and [[target_humidity_to]]",
-          "nl": "De ingestelde luchtvochtigheid is tussen [[target_humidity_from]] en [[target_humidity_to]]"
+          "en": "Target humidity is between [[target_humidity_from]] and [[target_humidity_to]]",
+          "nl": "Ingestelde luchtvochtigheid is tussen [[target_humidity_from]] en [[target_humidity_to]]"
         },
         "args": [
           {
@@ -119,12 +119,12 @@
       {
         "id": "change_target_humidity_less_than",
         "title": {
-          "en": "The target humidity is less than",
-          "nl": "De ingestelde luchtvochtigheid is minder dan"
+          "en": "Target humidity is less than",
+          "nl": "Ingestelde luchtvochtigheid is minder dan"
         },
         "titleFormatted": {
-          "en": "The target humidity is less than [[target_humidity_less]]",
-          "nl": "De ingestelde luchtvochtigheid is minder dan [[target_humidity_less]]"
+          "en": "Target humidity is less than [[target_humidity_less]]",
+          "nl": "Ingestelde luchtvochtigheid is minder dan [[target_humidity_less]]"
         },
         "args": [
           {
@@ -151,12 +151,12 @@
       {
         "id": "change_target_humidity_more_than",
         "title": {
-          "en": "The target humidity is more than",
-          "nl": "De ingestelde luchtvochtigheid is meer dan"
+          "en": "Target humidity is more than",
+          "nl": "Ingestelde luchtvochtigheid is meer dan"
         },
         "titleFormatted": {
-          "en": "The target humidity is more than [[target_humidity_more]]",
-          "nl": "De ingestelde luchtvochtigheid is meer dan [[target_humidity_more]]"
+          "en": "Target humidity is more than [[target_humidity_more]]",
+          "nl": "Ingestelde luchtvochtigheid is meer dan [[target_humidity_more]]"
         },
         "args": [
           {
@@ -183,12 +183,12 @@
       {
         "id": "change_target_temperature_between",
         "title": {
-          "en": "The target temperature is between",
-          "nl": "De ingestelde temperatuur is tussen"
+          "en": "Target temperature is between",
+          "nl": "Ingestelde temperatuur is tussen"
         },
         "titleFormatted": {
-          "en": "The target temperature is between [[target_temperature_from]] and [[target_temperature_to]]",
-          "nl": "De ingestelde temperatuur is tussen [[target_temperature_from]] en [[target_temperature_to]]"
+          "en": "Target temperature is between [[target_temperature_from]] and [[target_temperature_to]]",
+          "nl": "Ingestelde temperatuur is tussen [[target_temperature_from]] en [[target_temperature_to]]"
         },
         "args": [
           {
@@ -229,12 +229,12 @@
       {
         "id": "change_target_temperature_less_than",
         "title": {
-          "en": "The target temperature is less than",
-          "nl": "De ingestelde temperatuur is minder dan"
+          "en": "Target temperature is less than",
+          "nl": "Ingestelde temperatuur is minder dan"
         },
         "titleFormatted": {
-          "en": "The target temperature is less than [[target_temperature_less]]",
-          "nl": "De ingestelde temperatuur is minder dan [[target_temperature_less]]"
+          "en": "Target temperature is less than [[target_temperature_less]]",
+          "nl": "Ingestelde temperatuur is minder dan [[target_temperature_less]]"
         },
         "args": [
           {
@@ -261,12 +261,12 @@
       {
         "id": "change_target_temperature_more_than",
         "title": {
-          "en": "The target temperature is more than",
-          "nl": "De ingestelde temperatuur is meer dan"
+          "en": "Target temperature is more than",
+          "nl": "Ingestelde temperatuur is meer dan"
         },
         "titleFormatted": {
-          "en": "The target temperature is more than [[target_temperature_more]]",
-          "nl": "De ingestelde temperatuur is meer dan [[target_temperature_more]]"
+          "en": "Target temperature is more than [[target_temperature_more]]",
+          "nl": "Ingestelde temperatuur is meer dan [[target_temperature_more]]"
         },
         "args": [
           {
@@ -293,12 +293,12 @@
       {
         "id": "inside_temperature_between",
         "title": {
-          "en": "The inside temperature is between",
-          "nl": "De binnentemperatuur is tussen"
+          "en": "Inside temperature is between",
+          "nl": "Binnentemperatuur is tussen"
         },
         "titleFormatted": {
-          "en": "The inside temperature is between [[inside_temperature_from]] and [[inside_temperature_to]]",
-          "nl": "De binnentemperatuur is tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
+          "en": "Inside temperature is between [[inside_temperature_from]] and [[inside_temperature_to]]",
+          "nl": "Binnentemperatuur is tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
         },
         "args": [
           {
@@ -337,28 +337,14 @@
         ]
       },
       {
-        "id": "measure_temperature_changed",
-        "title": {
-          "en": "The (inside) temperature has changed",
-          "nl": "De (binnen) temperatuur is veranderd"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=airairhp"
-          }
-        ]
-      },
-      {
         "id": "inside_temperature_less_than",
         "title": {
-          "en": "The inside temperature is less than",
-          "nl": "De binnentemperatuur is minder dan"
+          "en": "Inside temperature is less than",
+          "nl": "Binnentemperatuur is minder dan"
         },
         "titleFormatted": {
-          "en": "The inside temperature is less than [[inside_temperature_less]]",
-          "nl": "De binnentemperatuur is minder dan [[inside_temperature_less]]"
+          "en": "Inside temperature is less than [[inside_temperature_less]]",
+          "nl": "Binnentemperatuur is minder dan [[inside_temperature_less]]"
         },
         "args": [
           {
@@ -385,12 +371,12 @@
       {
         "id": "inside_temperature_more_than",
         "title": {
-          "en": "The inside temperature is more than",
-          "nl": "De binnentemperatuur is meer dan"
+          "en": "Inside temperature is more than",
+          "nl": "Binnentemperatuur is meer dan"
         },
         "titleFormatted": {
-          "en": "The inside temperature is more than [[inside_temperature_more]]",
-          "nl": "De binnentemperatuur is meer dan [[inside_temperature_more]]"
+          "en": "Inside temperature is more than [[inside_temperature_more]]",
+          "nl": "Binnentemperatuur is meer dan [[inside_temperature_more]]"
         },
         "args": [
           {
@@ -483,12 +469,12 @@
       {
         "id": "outside_temperature_between",
         "title": {
-          "en": "The outside temperature is between",
-          "nl": "De buitentemperatuur is tussen"
+          "en": "Outside temperature is between",
+          "nl": "Buitentemperatuur is tussen"
         },
         "titleFormatted": {
-          "en": "The outside temperature is between [[outside_temperature_from]] and [[outside_temperature_to]]",
-          "nl": "De buitentemperatuur is tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
+          "en": "Outside temperature is between [[outside_temperature_from]] and [[outside_temperature_to]]",
+          "nl": "Buitentemperatuur is tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
         },
         "args": [
           {
@@ -529,12 +515,12 @@
       {
         "id": "outside_temperature_less_than",
         "title": {
-          "en": "The outside temperature is less than",
-          "nl": "De buitentemperatuur is minder dan"
+          "en": "Outside temperature is less than",
+          "nl": "Buitentemperatuur is minder dan"
         },
         "titleFormatted": {
-          "en": "The outside temperature is less than [[ouside_temperature_less]]",
-          "nl": "De buitentemperatuur is minder dan [[ouside_temperature_less]]"
+          "en": "Outside temperature is less than [[ouside_temperature_less]]",
+          "nl": "Buitentemperatuur is minder dan [[ouside_temperature_less]]"
         },
         "args": [
           {
@@ -561,12 +547,12 @@
       {
         "id": "outside_temperature_more_than",
         "title": {
-          "en": "The outside temperature is more than",
-          "nl": "De buitentemperatuur is meer dan"
+          "en": "Outside temperature is more than",
+          "nl": "Buitentemperatuur is meer dan"
         },
         "titleFormatted": {
-          "en": "The outside temperature is more than [[outside_temperature_more]]",
-          "nl": "De buitentemperatuur is meer dan [[outside_temperature_more]]"
+          "en": "Outside temperature is more than [[outside_temperature_more]]",
+          "nl": "Buitentemperatuur is meer dan [[outside_temperature_more]]"
         },
         "args": [
           {
@@ -591,10 +577,15 @@
         ]
       },
       {
-        "id": "target_temperature_changed",
+        "id": "temperature_changed",
+        "deprecated": true,
         "title": {
-          "en": "The target temperature has changed",
-          "nl": "De ingestelde temperatuur is veranderd"
+          "en": "Inside temperature has changed",
+          "nl": "Binnentemperatuur is veranderd"
+        },
+        "titleFormatted": {
+          "en": "Inside temperature has changed",
+          "nl": "Binnentemperatuur is veranderd"
         },
         "args": [
           {
@@ -603,32 +594,18 @@
             "filter": "driver_id=airairhp|airairhphk"
           }
         ]
-      },
-      {
-        "id": "temperature_changed",
-        "title": {
-          "en": "The (inside) temperature has changed",
-          "nl": "De (binnen) temperatuur is veranderd"
-        },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=airairhphk"
-          }
-        ]
       }
     ],
     "conditions": [
       {
         "id": "fan_direction_equals",
         "title": {
-          "en": "The airflow direction !{{equals|does not equal}}",
-          "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}}"
+          "en": "Airflow direction !{{equals|does not equal}}",
+          "nl": "Uitblaasrichting !{{overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The airflow direction !{{equals|does not equal}} [[fdirequals]]",
-          "nl": "De uitblaasrichting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
+          "en": "Airflow direction !{{equals|does not equal}} [[fdirequals]]",
+          "nl": "Uitblaasrichting !{{overeen met|komt niet overeen met}} [[fdirequals]]"
         },
         "args": [
           {
@@ -675,12 +652,12 @@
       {
         "id": "fan_rate_equals",
         "title": {
-          "en": "The fan speed !{{equals|does not equal}}",
-          "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}}"
+          "en": "Fan speed !{{equals|does not equal}}",
+          "nl": "Ventilatorsnelheid !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The fan speed !{{equals|does not equal}} [[frateequals]]",
-          "nl": "De ventilatorsnelheid !{{komt overeen met|komt niet overeen met}} [[frateequals]]"
+          "en": "Fan speed !{{equals|does not equal}} [[frateequals]]",
+          "nl": "Ventilatorsnelheid !{{komt overeen met|komt niet overeen met}} [[frateequals]]"
         },
         "args": [
           {
@@ -748,12 +725,12 @@
       {
         "id": "has_inside_temperature_between",
         "title": {
-          "en": "The inside temperature !{{is|isn't}} between",
-          "nl": "De binnentemperatuur !{{is|is niet}} tussen"
+          "en": "Inside temperature !{{is|isn't}} between",
+          "nl": "Binnentemperatuur !{{is|is niet}} tussen"
         },
         "titleFormatted": {
-          "en": "The inside temperature !{{is|isn't}} between [[inside_temperature_from]] and [[inside_temperature_to]]",
-          "nl": "De binnentemperatuur !{{is|is niet}} tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
+          "en": "Inside temperature !{{is|isn't}} between [[inside_temperature_from]] and [[inside_temperature_to]]",
+          "nl": "Binnentemperatuur !{{is|is niet}} tussen [[inside_temperature_from]] en [[inside_temperature_to]]"
         },
         "args": [
           {
@@ -794,12 +771,12 @@
       {
         "id": "has_inside_temperature_less_than",
         "title": {
-          "en": "The inside temperature !{{is|isn't}} less than",
-          "nl": "De binnentemperatuur !{{is|is niet}} minder dan"
+          "en": "Inside temperature !{{is|isn't}} less than",
+          "nl": "Binnentemperatuur !{{is|is niet}} minder dan"
         },
         "titleFormatted": {
-          "en": "The inside temperature !{{is|isn't}} less than [[inside_temperature_less]]",
-          "nl": "De binnentemperatuur !{{is|is niet}} minder dan [[inside_temperature_less]]"
+          "en": "Inside temperature !{{is|isn't}} less than [[inside_temperature_less]]",
+          "nl": "Binnentemperatuur !{{is|is niet}} minder dan [[inside_temperature_less]]"
         },
         "args": [
           {
@@ -826,12 +803,12 @@
       {
         "id": "has_inside_temperature_more_than",
         "title": {
-          "en": "The inside temperature !{{is|isn't}} more than",
-          "nl": "De binnentemperatuur !{{is|is niet}} meer dan"
+          "en": "Inside temperature !{{is|isn't}} more than",
+          "nl": "Binnentemperatuur !{{is|is niet}} meer dan"
         },
         "titleFormatted": {
-          "en": "The inside temperature !{{is|isn't}} more than [[inside_temperature_more]]",
-          "nl": "De binnentemperatuur !{{is|is niet}} meer dan [[inside_temperature_more]]"
+          "en": "Inside temperature !{{is|isn't}} more than [[inside_temperature_more]]",
+          "nl": "Binnentemperatuur !{{is|is niet}} meer dan [[inside_temperature_more]]"
         },
         "args": [
           {
@@ -858,12 +835,12 @@
       {
         "id": "has_outside_temperature_between",
         "title": {
-          "en": "The outside temperature !{{is|isn't}} between",
-          "nl": "De buitentemperatuur !{{is|is niet}} tussen"
+          "en": "Outside temperature !{{is|isn't}} between",
+          "nl": "Buitentemperatuur !{{is|is niet}} tussen"
         },
         "titleFormatted": {
-          "en": "The outside temperature !{{is|isn't}} between [[outside_temperature_from]] and [[outside_temperature_to]]",
-          "nl": "De buitentemperatuur !{{is|is niet}} tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
+          "en": "Outside temperature !{{is|isn't}} between [[outside_temperature_from]] and [[outside_temperature_to]]",
+          "nl": "Buitentemperatuur !{{is|is niet}} tussen [[outside_temperature_from]] en [[outside_temperature_to]]"
         },
         "args": [
           {
@@ -904,12 +881,12 @@
       {
         "id": "has_outside_temperature_less_than",
         "title": {
-          "en": "The outside temperature !{{is|isn't}} less than",
-          "nl": "De buitentemperatuur !{{is|is niet}} minder dan"
+          "en": "Outside temperature !{{is|isn't}} less than",
+          "nl": "Buitentemperatuur !{{is|is niet}} minder dan"
         },
         "titleFormatted": {
-          "en": "The outside temperature !{{is|isn't}} less than [[outside_temperature_less]]",
-          "nl": "De buitentemperatuur !{{is|is niet}} minder dan [[outside_temperature_less]]"
+          "en": "Outside temperature !{{is|isn't}} less than [[outside_temperature_less]]",
+          "nl": "Buitentemperatuur !{{is|is niet}} minder dan [[outside_temperature_less]]"
         },
         "args": [
           {
@@ -936,12 +913,12 @@
       {
         "id": "has_outside_temperature_more_than",
         "title": {
-          "en": "The outside temperature !{{is|isn't}} more than",
-          "nl": "De buitentemperatuur !{{is|is niet}} meer dan"
+          "en": "Outside temperature !{{is|isn't}} more than",
+          "nl": "Buitentemperatuur !{{is|is niet}} meer dan"
         },
         "titleFormatted": {
-          "en": "The outside temperature !{{is|isn't}} more than [[outside_temperature_more]]",
-          "nl": "De buitentemperatuur !{{is|is niet}} meer dan [[outside_temperature_more]]"
+          "en": "Outside temperature !{{is|isn't}} more than [[outside_temperature_more]]",
+          "nl": "Buitentemperatuur !{{is|is niet}} meer dan [[outside_temperature_more]]"
         },
         "args": [
           {
@@ -968,12 +945,12 @@
       {
         "id": "has_target_humidity_between",
         "title": {
-          "en": "The target humidity !{{is|isn't}} between",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} tussen"
+          "en": "Target humidity !{{is|isn't}} between",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} tussen"
         },
         "titleFormatted": {
-          "en": "The target humidity !{{is|isn't}} between [[target_humidity_from]] and [[target_humidity_to]]",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} tussen [[target_humidity_from]] en [[target_humidity_to]]"
+          "en": "Target humidity !{{is|isn't}} between [[target_humidity_from]] and [[target_humidity_to]]",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} tussen [[target_humidity_from]] en [[target_humidity_to]]"
         },
         "args": [
           {
@@ -1014,12 +991,12 @@
       {
         "id": "has_target_humidity_less_than",
         "title": {
-          "en": "The target humidity !{{is|isn't}} less than",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} minder dan"
+          "en": "Target humidity !{{is|isn't}} less than",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} minder dan"
         },
         "titleFormatted": {
-          "en": "The target humidity !{{is|isn't}} less than [[target_humidity_less]]",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} minder dan [[target_humidity_less]]"
+          "en": "Target humidity !{{is|isn't}} less than [[target_humidity_less]]",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} minder dan [[target_humidity_less]]"
         },
         "args": [
           {
@@ -1046,12 +1023,12 @@
       {
         "id": "has_target_humidity_more_than",
         "title": {
-          "en": "The target humidity !{{is|isn't}} more than",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} meer dan"
+          "en": "Target humidity !{{is|isn't}} more than",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} meer dan"
         },
         "titleFormatted": {
-          "en": "The target humidity !{{is|isn't}} more than [[target_humidity_more]]",
-          "nl": "De ingestelde luchtvochtigheid !{{is|is niet}} meer dan [[target_humidity_more]]"
+          "en": "Target humidity !{{is|isn't}} more than [[target_humidity_more]]",
+          "nl": "Ingestelde luchtvochtigheid !{{is|is niet}} meer dan [[target_humidity_more]]"
         },
         "args": [
           {
@@ -1078,12 +1055,12 @@
       {
         "id": "has_target_temperature_between",
         "title": {
-          "en": "The target temperature !{{is|isn't}} between",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} tussen"
+          "en": "Target temperature !{{is|isn't}} between",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} tussen"
         },
         "titleFormatted": {
-          "en": "The target temperature !{{is|isn't}} between [[target_temperature_from]] and [[target_temperature_to]]",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} tussen [[target_temperature_from]] en [[target_temperature_to]]"
+          "en": "Target temperature !{{is|isn't}} between [[target_temperature_from]] and [[target_temperature_to]]",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} tussen [[target_temperature_from]] en [[target_temperature_to]]"
         },
         "args": [
           {
@@ -1124,12 +1101,12 @@
       {
         "id": "has_target_temperature_less_than",
         "title": {
-          "en": "The target temperature !{{is|isn't}} less than",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan"
+          "en": "Target temperature !{{is|isn't}} less than",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} minder dan"
         },
         "titleFormatted": {
-          "en": "The target temperature !{{is|isn't}} less than [[target_temperature_less]]",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
+          "en": "Target temperature !{{is|isn't}} less than [[target_temperature_less]]",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
         },
         "args": [
           {
@@ -1156,12 +1133,12 @@
       {
         "id": "has_target_temperature_more_than",
         "title": {
-          "en": "The target temperature !{{is|isn't}} more than",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} meer dan"
+          "en": "Target temperature !{{is|isn't}} more than",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} meer dan"
         },
         "titleFormatted": {
-          "en": "The target temperature !{{is|isn't}} more than [[target_temperature_more]]",
-          "nl": "De ingestelde temperatuur !{{is|is niet}} meer dan [[target_temperature_more]]"
+          "en": "Target temperature !{{is|isn't}} more than [[target_temperature_more]]",
+          "nl": "Ingestelde temperatuur !{{is|is niet}} meer dan [[target_temperature_more]]"
         },
         "args": [
           {
@@ -1188,12 +1165,12 @@
       {
         "id": "mode_econo_equals",
         "title": {
-          "en": "The econo mode !{{equals|does not equal}}",
-          "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}}"
+          "en": "Econo mode !{{equals|does not equal}}",
+          "nl": "Bespaarmodus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The econo mode !{{equals|does not equal}} [[smode_econo]]",
-          "nl": "De bespaarmodus !{{komt overeen met|komt niet overeen met}} [[smode_econo]]"
+          "en": "Econo mode !{{equals|does not equal}} [[smode_econo]]",
+          "nl": "Bespaarmodus !{{komt overeen met|komt niet overeen met}} [[smode_econo]]"
         },
         "args": [
           {
@@ -1226,12 +1203,12 @@
       {
         "id": "mode_equals",
         "title": {
-          "en": "The operating mode !{{equals|does not equal}}",
-          "nl": "De werkmodus !{{komt overeen met|komt niet overeen met}}"
+          "en": "Operating mode !{{equals|does not equal}}",
+          "nl": "Werkmodus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The operating mode !{{equals|does not equal}} [[mode]]",
-          "nl": "De werkmodus !{{komt overeen met|komt niet overeen met}} [[mode]]"
+          "en": "Operating mode !{{equals|does not equal}} [[mode]]",
+          "nl": "Werkmodus !{{komt overeen met|komt niet overeen met}} [[mode]]"
         },
         "args": [
           {
@@ -1292,12 +1269,12 @@
       {
         "id": "mode_pwrful_equals",
         "title": {
-          "en": "The powerful mode !{{equals|does not equal}}",
-          "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}}"
+          "en": "Powerful mode !{{equals|does not equal}}",
+          "nl": "Krachtig mode !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The powerful mode !{{equals|does not equal}} [[smode_pwrful]]",
-          "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}} [[smode_pwrful]]"
+          "en": "Powerful mode !{{equals|does not equal}} [[smode_pwrful]]",
+          "nl": "Krachtig mode !{{komt overeen met|komt niet overeen met}} [[smode_pwrful]]"
         },
         "args": [
           {
@@ -1330,12 +1307,12 @@
       {
         "id": "mode_strmr_equals",
         "title": {
-          "en": "The streamer mode !{{equals|does not equal}}",
-          "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}}"
+          "en": "Streamer mode !{{equals|does not equal}}",
+          "nl": "Streamer modus !{{komt overeen met|komt niet overeen met}}"
         },
         "titleFormatted": {
-          "en": "The streamer mode !{{equals|does not equal}} [[smode_strmr]]",
-          "nl": "De streamer modus !{{komt overeen met|komt niet overeen met}} [[smode_strmr]]"
+          "en": "Streamer mode !{{equals|does not equal}} [[smode_strmr]]",
+          "nl": "Streamer modus !{{komt overeen met|komt niet overeen met}} [[smode_strmr]]"
         },
         "args": [
           {
@@ -1785,6 +1762,14 @@
         "measure_temperature.outside"
       ],
       "capabilitiesOptions": {
+        "target_temperature": {
+          "units": {
+            "en": "°C"
+          },
+          "min": 10,
+          "max": 32,
+          "step": 0.5
+        },
         "measure_temperature.inside": {
           "title": {
             "en": "Inside",
@@ -1829,15 +1814,6 @@
       "pair": [
         {
           "id": "start"
-        }
-      ],
-      "repair": [
-        {
-          "id": "startrepair"
-        },
-        {
-          "id": "finish",
-          "template": "done"
         }
       ],
       "settings": [
@@ -1959,6 +1935,16 @@
         "target_temperature",
         "measure_temperature"
       ],
+      "capabilitiesOptions": {
+        "target_temperature": {
+          "units": {
+            "en": "°C"
+          },
+          "min": 10,
+          "max": 32,
+          "step": 0.5
+        }
+      },
       "images": {
         "large": "/drivers/airairhphk/assets/images/large.png",
         "small": "/drivers/airairhphk/assets/images/small.png"
@@ -2154,22 +2140,6 @@
         }
       ]
     },
-    "measure_temperature": {
-      "type": "number",
-      "title": {
-        "en": "Temperature",
-        "nl": "Temperatuur"
-      },
-      "units": {
-        "en": "°C"
-      },
-      "insights": true,
-      "decimals": 1,
-      "chartType": "spline",
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor"
-    },
     "special_mode_eco": {
       "type": "enum",
       "title": {
@@ -2264,24 +2234,6 @@
       "max": 50,
       "step": 1,
       "uiComponent": "slider"
-    },
-    "target_temperature": {
-      "type": "number",
-      "min": 10,
-      "max": 32,
-      "title": {
-        "en": "Target temperature",
-        "nl": "Ingestelde temperatuur"
-      },
-      "units": {
-        "en": "°C"
-      },
-      "chartType": "stepLine",
-      "decimals": 0,
-      "insights": true,
-      "getable": true,
-      "setable": true,
-      "uiComponent": "thermostat"
     },
     "thermostat_mode_std": {
       "type": "enum",

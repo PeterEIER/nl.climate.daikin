@@ -54,7 +54,10 @@ class AirAirHPHKDriver extends Driver {
 					default:
 						break;
 				}
-				device.setCapabilityValue('target_temperature', atemp);
+				if (device.hasCapability('target_temperature') ) {
+					device.setCapabilityValue('target_temperature', atemp)
+					.catch(device.error);
+				}
 				//this.log('target temp', atemp);
 
 				// type B adapter logic

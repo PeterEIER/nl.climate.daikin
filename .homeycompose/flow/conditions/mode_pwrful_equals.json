@@ -1,12 +1,12 @@
 {
     "id": "mode_pwrful_equals",
     "title": {
-        "en": "The powerful mode !{{equals|does not equal}}",
-        "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}}"
+        "en": "Powerful mode !{{equals|does not equal}}",
+        "nl": "Krachtig mode !{{komt overeen met|komt niet overeen met}}"
     },
     "titleFormatted": {
-        "en": "The powerful mode !{{equals|does not equal}} [[smode_pwrful]]",
-        "nl": "De krachtig mode !{{komt overeen met|komt niet overeen met}} [[smode_pwrful]]"
+        "en": "Powerful mode !{{equals|does not equal}} [[smode_pwrful]]",
+        "nl": "Krachtig mode !{{komt overeen met|komt niet overeen met}} [[smode_pwrful]]"
     },
     "args": [{
         "type": "device",

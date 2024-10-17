@@ -426,7 +426,10 @@ class AirAirHPDriver extends Driver {
 				this.log('ip_address', ip_address);
 
 				const ahum = args.ahum;
-				device.setCapabilityValue('target_humidity', ahum);
+				if (device.hasCapability('target_humidity') ) {
+					device.setCapabilityValue('target_humidity', ahum)
+					.catch(device.error);
+				}
 				this.log('target hum', ahum);
 
 				// type B adapter logic
@@ -458,7 +461,10 @@ class AirAirHPDriver extends Driver {
 				this.log('ip_address', ip_address);
 
 				const atemp = args.atemp;
-				device.setCapabilityValue('target_temperature', atemp);
+				if (device.hasCapability('target_temperature') ) {
+					device.setCapabilityValue('target_temperature', atemp)
+					.catch(device.error);
+				}
 				this.log('target temp', atemp);
 
 				// type B adapter logic
@@ -521,7 +527,11 @@ class AirAirHPDriver extends Driver {
 					default:
 						break;
 				}
-				device.setCapabilityValue('target_temperature', atemp);
+
+				if (device.hasCapability('target_temperature') ) {
+					device.setCapabilityValue('target_temperature', atemp)
+					.catch(device.error);
+				}
 				this.log('target temp', atemp);
 
 				// type B adapter logic
@@ -557,7 +567,10 @@ class AirAirHPDriver extends Driver {
 
 				const thermostat_mode = args.mode;
 				const spmode = settings.spmode;
-				device.setCapabilityValue('thermostat_mode_std', thermostat_mode);
+				if (device.hasCapability('thermostat_mode_std') ) {
+					device.setCapabilityValue('thermostat_mode_std', thermostat_mode)
+					.catch(device.error);
+				}
 				this.log('thermostat_mode: ', thermostat_mode);
 
 				// type B adapter logic
@@ -589,7 +602,10 @@ class AirAirHPDriver extends Driver {
 				this.log('ip_address', ip_address);
 
 				const economode = args.smecono;
-				device.setCapabilityValue('special_mode_eco', economode);
+				if (device.hasCapability('special_mode_eco') ) {
+					device.setCapabilityValue('special_mode_eco', economode)
+					.catch(device.error);
+				}
 				this.log('special_mode_eco: ', economode);
 
 				if (economode === "on") {
@@ -629,7 +645,10 @@ class AirAirHPDriver extends Driver {
 				this.log('ip_address', ip_address);
 
 				const pwrfulmode = args.smpwrful;
-				device.setCapabilityValue('special_mode_pwr', pwrfulmode);
+				if (device.hasCapability('special_mode_pwr') ) {
+					device.setCapabilityValue('special_mode_pwr', pwrfulmode)
+					.catch(device.error);
+				}
 				this.log('special_mode_pwr: ', pwrfulmode);
 
 				if (pwrfulmode === "on") {
@@ -669,7 +688,10 @@ class AirAirHPDriver extends Driver {
 				this.log('ip_address', ip_address);
 
 				const strmrmode = args.smstrmr;
-				device.setCapabilityValue('special_mode_str', strmrmode);
+				if (device.hasCapability('special_mode_str') ) {
+					device.setCapabilityValue('special_mode_str', strmrmode)
+					.catch(device.error);
+				}
 				this.log('special_mode_str: ', strmrmode);
 
 				if (strmrmode === "on") {
@@ -744,7 +766,10 @@ class AirAirHPDriver extends Driver {
 						fan_rate = 'auto';
 						break;
 				}
-				device.setCapabilityValue('fan_rate', fan_rate);
+				if (device.hasCapability('fan_rate') ) {
+					device.setCapabilityValue('fan_rate', fan_rate)
+					.catch(device.error);
+				}
 				this.log('fan_rate', fan_rate);
 
 				// type B adapter logic
@@ -799,7 +824,10 @@ class AirAirHPDriver extends Driver {
 						var fan_direction = 'stop';
 						break;
 				}
-				device.setCapabilityValue('fan_direction', fan_direction);
+				if (device.hasCapability('fan_direction') ) {
+					device.setCapabilityValue('fan_direction', fan_direction)
+					.catch(device.error);
+				}
 				this.log('fan_direction', fan_direction);
 
 				// type B adapter logic

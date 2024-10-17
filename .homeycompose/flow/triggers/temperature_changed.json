@@ -1,12 +1,17 @@
 {
 	"id": "temperature_changed",
+	"deprecated": true,
 	"title": {
-		"en": "The (inside) temperature has changed",
-		"nl": "De (binnen) temperatuur is veranderd"
+		"en": "Inside temperature has changed",
+		"nl": "Binnentemperatuur is veranderd"
 	},
+    "titleFormatted": {
+		"en": "Inside temperature has changed",
+		"nl": "Binnentemperatuur is veranderd"
+    },
 	"args": [{
 		"name": "device",
 		"type": "device",
-		"filter": "driver_id=airairhphk"
+		"filter": "driver_id=airairhp|airairhphk"
 	}]
 }

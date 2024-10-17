@@ -1,12 +1,12 @@
 {
     "id": "inside_temperature_more_than",
     "title": {
-        "en": "The inside temperature is more than",
-        "nl": "De binnentemperatuur is meer dan"
+        "en": "Inside temperature is more than",
+        "nl": "Binnentemperatuur is meer dan"
     },
     "titleFormatted": {
-        "en": "The inside temperature is more than [[inside_temperature_more]]",
-        "nl": "De binnentemperatuur is meer dan [[inside_temperature_more]]"
+        "en": "Inside temperature is more than [[inside_temperature_more]]",
+        "nl": "Binnentemperatuur is meer dan [[inside_temperature_more]]"
     },
     "args": [{
         "name": "device",

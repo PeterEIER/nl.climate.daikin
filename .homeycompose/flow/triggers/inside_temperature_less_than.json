@@ -1,12 +1,12 @@
 {
     "id": "inside_temperature_less_than",
     "title": {
-        "en": "The inside temperature is less than",
-        "nl": "De binnentemperatuur is minder dan"
+        "en": "Inside temperature is less than",
+        "nl": "Binnentemperatuur is minder dan"
     },
     "titleFormatted": {
-        "en": "The inside temperature is less than [[inside_temperature_less]]",
-        "nl": "De binnentemperatuur is minder dan [[inside_temperature_less]]"
+        "en": "Inside temperature is less than [[inside_temperature_less]]",
+        "nl": "Binnentemperatuur is minder dan [[inside_temperature_less]]"
     },
     "args": [{
         "name": "device",

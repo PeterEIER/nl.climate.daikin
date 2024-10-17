@@ -1,12 +1,12 @@
 {
     "id": "has_target_temperature_less_than",
     "title": {
-        "en": "The target temperature !{{is|isn't}} less than",
-        "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan"
+        "en": "Target temperature !{{is|isn't}} less than",
+        "nl": "Ingestelde temperatuur !{{is|is niet}} minder dan"
     },
     "titleFormatted": {
-        "en": "The target temperature !{{is|isn't}} less than [[target_temperature_less]]",
-        "nl": "De ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
+        "en": "Target temperature !{{is|isn't}} less than [[target_temperature_less]]",
+        "nl": "Ingestelde temperatuur !{{is|is niet}} minder dan [[target_temperature_less]]"
     },
     "args": [{
         "name": "device",

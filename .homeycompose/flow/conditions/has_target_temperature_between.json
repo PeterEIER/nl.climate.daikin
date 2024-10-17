@@ -1,12 +1,12 @@
 {
     "id": "has_target_temperature_between",
     "title": {
-        "en": "The target temperature !{{is|isn't}} between",
-        "nl": "De ingestelde temperatuur !{{is|is niet}} tussen"
+        "en": "Target temperature !{{is|isn't}} between",
+        "nl": "Ingestelde temperatuur !{{is|is niet}} tussen"
     },
     "titleFormatted": {
-        "en": "The target temperature !{{is|isn't}} between [[target_temperature_from]] and [[target_temperature_to]]",
-        "nl": "De ingestelde temperatuur !{{is|is niet}} tussen [[target_temperature_from]] en [[target_temperature_to]]"
+        "en": "Target temperature !{{is|isn't}} between [[target_temperature_from]] and [[target_temperature_to]]",
+        "nl": "Ingestelde temperatuur !{{is|is niet}} tussen [[target_temperature_from]] en [[target_temperature_to]]"
     },
     "args": [{
         "name": "device",
