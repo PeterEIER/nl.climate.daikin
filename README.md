@@ -252,4 +252,7 @@ If you like the app, consider buying me a cup of coffee!
 - 13-MAR-22: SDK updated, new features added by Athom update app & drive json files accordingly
 - 13-MAY-22: Code changes in support of Homey firmeware 7.4.1
 - 13-JUL-22: Removed re-pair functionality (no longer needed). Added "hasCapability" check to prevent NodeJS 16 error reports.
-- 28-SEP-24: Changes in support of Homey Pro firmware v12.2.0 and higher. 
+- 28-SEP-24: Changes in support of Homey Pro firmware v12.2.0 and higher.
+- 01-MAR-25: Target temperature "change by" flow card can now be changed in steps of 0.5 degC iso 1 degC steps.
+- 02-MAR-25: Ensured that all temperature related flow cards can be changed in steps of 0.5 degC.
+ 

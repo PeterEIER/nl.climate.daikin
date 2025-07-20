@@ -17,9 +17,10 @@
         "type": "range",
         "min": -5,
         "max": 5,
+		"step": 0.5,
 		"label": "°C",
 		"labelMultiplier": 1,
-		"labelDecimals": 0,
+		"labelDecimals": 1,
         "title": {
             "en": "Change target temperature by",
             "nl": "Wijzig de ingestelde temperatuur met"

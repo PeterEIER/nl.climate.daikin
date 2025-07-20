@@ -107,5 +107,14 @@
   },
   "5.3.2": {
     "en": "Changes in support of Homey Pro firmware v12.2.0 and higher."
+  },
+  "5.3.3": {
+    "en": "Flow card \"Change target temperature by °C\" does now support steps of 0.5 degC."
+  },
+  "5.3.4": {
+    "en": "Flow card \\\"Change target temperature by °C\\\" does now support steps of 0.5 degC."
+  },
+  "5.3.5": {
+    "en": "All the temperature related flow cards now support step changes of 0.5 degC."
   }
 }
